@@ -48,6 +48,7 @@
     cursor: pointer;
     opacity: 0;
     display: none;
+    z-index: 2000000;
 }
 
 #allow-music {
@@ -66,4 +67,8 @@
     background-repeat: no-repeat;
     top: 60vh;
     right: 47vw;
+}
+
+p {
+    cursor: default;
 }

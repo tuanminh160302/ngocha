@@ -24,8 +24,11 @@ html, body{
     height: 60px;
     width: 60px;
     border-radius: 50%;  
-    z-index: 50;
     background: transparent;
+}
+
+.circle-home { 
+    z-index: 50;
 }
 
 .header {
@@ -46,6 +49,7 @@ html, body{
     left: 3vw;
     top: 4vh;
     z-index: 1000;
+    animation: neon 0.08s ease-in-out infinite alternate;
 }
 
 #menu {
