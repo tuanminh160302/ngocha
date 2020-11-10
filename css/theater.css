@@ -13,7 +13,7 @@ html, body {
     width: 60px;
     border-radius: 50%;
     background: transparent;
-    backdrop-filter: grayscale(1) sepia() blur(2px);
+    backdrop-filter: grayscale(1) sepia(100%) blur(1.5px) brightness(1.4);
 }
 
 .circle-theater {

@@ -1,5 +1,4 @@
 window.onload = () => {
-    TweenMax.to('.act2-17', 0, { display: 'none'});
     setTimeout(() => {
         TweenMax.to('#gif', 0.4, { opacity: 0 });
         TweenMax.to('#p-loading', 0.4, { opacity: 0 });
@@ -64,7 +63,7 @@ window.onload = () => {
 
         document.getElementById('deny-music').addEventListener('click', () => {
             TweenMax.to('#circle', 0, { delay: 7.3, zIndex: '50'});
-            
+
             for (i = 1; i < 18; i++) {
                 document.getElementById(`music-tag-${i}`).pause();
             }
@@ -102,7 +101,8 @@ window.onload = () => {
             document.getElementById('play-now').innerText = 'Friends on the other side'
         })
         // TweenMax.to('.preloader', 1.1, { y: '-101vh', ease: Power4.easeInOut});
-    }, 1000)
+        TweenMax.to('.act2-17', 0, { display: 'none'});
+    }, 3000)
 }
 
 var actControls = 1;
@@ -146,7 +146,7 @@ document.getElementById('pause').addEventListener('click', () => {
 
 document.getElementById('next-act').addEventListener('click', () => {
     TweenMax.to('#circle', 0, { zIndex: '100000'});
-    TweenMax.to('#circle', 0, { delay: 3, zIndex: '50'});
+    TweenMax.to('#circle', 0, { delay: 2.7, zIndex: '50'});
     TweenMax.to(`#act-${actControls}-container`, 0, { delay: .3, display: 'none'});
     TweenMax.to('.act-noti', .3, { opacity: 1 });
     TweenMax.to('.act-noti', 0, { display: 'flex' });
@@ -299,7 +299,7 @@ document.getElementById('next-act').addEventListener('click', () => {
 
 document.getElementById('prev-act').addEventListener('click', () => {
     TweenMax.to('#circle', 0, { zIndex: '100000'});
-    TweenMax.to('#circle', 0, { delay: 3, zIndex: '50'});
+    TweenMax.to('#circle', 0, { delay: 2.7, zIndex: '50'});
     TweenMax.to(`#act-${actControls}-container`, 0, { delay: .3, display: 'none'});
     TweenMax.to('#pause', 0, { delay: .3, display: 'block', opacity: 1 });
     TweenMax.to('#play', 0, { delay: .3, display: 'none', opacity: 0 });
