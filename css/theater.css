@@ -36,9 +36,6 @@ html, body {
     display: flex;
     justify-content: center;
     align-items: center;
-
-    display: none;
-    opacity: 0;
 }
 
 #act-noti-text {
@@ -81,7 +78,7 @@ html, body {
     width: 3vh;
     position: absolute;
     cursor: pointer;
-    background-image: url(/button/move-white.png);
+    background-image: url(/button/next.gif);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -95,10 +92,11 @@ html, body {
     width: 3vh;
     position: absolute;
     cursor: pointer;
-    background-image: url(/button/moveback-white.png);
+    background-image: url(/button/next.gif);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    transform: rotate(180deg);
     top: calc(40vh - 1.5vh);
     left: 3vw;
     z-index: 1000;
