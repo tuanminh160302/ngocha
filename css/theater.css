@@ -1,0 +1,129 @@
+html, body {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.act-controls {
+    position: absolute;
+    color: white;
+    font-size: 1em;
+    z-index: 1000;
+    cursor: pointer;
+}
+
+#next-act {
+    top: 4vh;
+    right: 40vw;
+}
+
+#prev-act {
+    top: 4vh;
+    left: 40vw;
+    display: none;
+    opacity: 0;
+}
+
+.act-noti {
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    bottom: 0;
+    background-color: black;
+    z-index: 10000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    display: none;
+    opacity: 0;
+}
+
+#act-noti-text {
+    color: white;
+    font-size: 1.25em;
+}
+
+.act-container {
+    height: 90vh;
+    width: 100vw;
+    position: absolute;
+    bottom: 0;
+    background-color: black;
+}
+
+.act2-17 {
+    display: none;
+}
+
+.act-container-img {
+    position: absolute;
+    height: 90vh;
+    width: 70vw;
+    left: 0;
+    top: 0;
+}
+
+.act-img {
+    position: absolute;
+    margin: 0;
+    height: 60vh;
+    width: auto;
+    top: 10vh;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.img-next {
+    height: 3vh;
+    width: 3vh;
+    position: absolute;
+    cursor: pointer;
+    background-image: url(/button/move-white.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    top: calc(40vh - 1.5vh);
+    right: 3vw;
+    z-index: 1000;
+}
+
+.img-prev {
+    height: 3vh;
+    width: 3vh;
+    position: absolute;
+    cursor: pointer;
+    background-image: url(/button/moveback-white.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    top: calc(40vh - 1.5vh);
+    left: 3vw;
+    z-index: 1000;
+    opacity: 1;
+    display: none;
+}
+
+#volume-on {
+    background-image: url(/button/volume-on.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    bottom: 4vh;
+    right: 3vw;
+    display: none;
+    opacity: 0;
+}
+
+#volume-off {
+    background-image: url(/button/volume-off.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    bottom: 4vh;
+    right: 3vw;
+    display: none;
+    opacity: 0;
+}

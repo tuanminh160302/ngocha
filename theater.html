@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/preloader.css">
+    <link rel="stylesheet" href="css/theater.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <!-- <div class="preloader" id="preloader">
+        <img id="gif" src="/preloader/loading.gif" alt="">
+        <p id="p-loading">loading theater</p>
+        <p id="p-media-control">Theater always comes with music. So let me play you some gorgeous song</p>
+        <p id="glams-preloader">g'lams 2020: the fall moon</p>
+        <div class="music-rights" id="allow-music"></div>
+        <div class="music-rights" id="deny-music"></div>
+    </div> -->
+
+    <div id="menu"></div>
+    <div class="menu-container">
+        <div id="close"></div>
+        <p id="title" class="nav-menu">ngoc ha's portfolio</p>
+        <p id="nav-music" class="nav-menu">music</p>
+        <p id="nav-theater" class="nav-menu">theater</p>
+
+        <p id="nav-contact" class="nav-menu">contact</p>
+        <p id="nav-contact-2" class="nav-menu">contact</p>
+        <p id="contact-name" class="nav-contact-details">nguyen ngoc ha</p>
+        <p id="contact-phone" class="nav-contact-details">0xxxxxxxxx</p>
+        <p id="contact-email" class="nav-contact-details">someone@email.com</p>
+
+        <a href="https://www.facebook.com/tuanng1603/" target="_blank">
+            <p id="credit" class="nav-menu">developed by canhtuan</p>
+        </a>
+    </div>
+
+
+
+
+
+    <audio id="music-tag-1" loop="loop" src="music/1.mp3" type="audio/mpeg"></audio>
+    <audio id="music-tag-2" loop="loop" src="music/2.mp3" type="audio/mpeg"></audio>
+    <audio id="music-tag-3" loop="loop" src="music/3.mp3" type="audio/mpeg"></audio>
+    <audio id="music-tag-4" loop="loop" src="music/4.mp3" type="audio/mpeg"></audio>
+    <audio id="music-tag-5" loop="loop" src="music/5.mp3" type="audio/mpeg"></audio>
+    <audio id="music-tag-6" loop="loop" src="music/6.mp3" type="audio/mpeg"></audio>
+    <audio id="music-tag-7" loop="loop" src="music/7.mp3" type="audio/mpeg"></audio>
+    <audio id="music-tag-8" loop="loop" src="music/8.mp3" type="audio/mpeg"></audio>
+    <audio id="music-tag-9" loop="loop" src="music/9.mp3" type="audio/mpeg"></audio>
+    <audio id="music-tag-10" loop="loop" src="music/10.mp3" type="audio/mpeg"></audio>
+    <audio id="music-tag-11" loop="loop" src="music/11.mp3" type="audio/mpeg"></audio>
+    <audio id="music-tag-12" loop="loop" src="music/12.mp3" type="audio/mpeg"></audio>
+    <audio id="music-tag-13" loop="loop" src="music/13.mp3" type="audio/mpeg"></audio>
+    <audio id="music-tag-14" loop="loop" src="music/14.mp3" type="audio/mpeg"></audio>
+    <audio id="music-tag-15" loop="loop" src="music/15.mp3" type="audio/mpeg"></audio>
+    <audio id="music-tag-16" loop="loop" src="music/16.mp3" type="audio/mpeg"></audio>
+    <audio id="music-tag-17" loop="loop" src="music/17.mp3" type="audio/mpeg"></audio>
+
+
+    <div class="media-control" id="play"></div>
+    <div class="media-control" id="pause"></div>
+    <div class="media-control" id="volume-on"></div>
+    <div class="media-control" id="volume-off"></div>
+    <p id="playing">Playing</p>
+    <p id="play-now"></p>
+
+
+
+    <div class="container" id="container">
+        <p class="act-controls" id="next-act">next act</p>
+        <p class="act-controls" id="prev-act">previous act</p>
+        <span id="circle" class="circle"></span>
+        <nav class="header"><a id="logo" href="#">ngoc ha</a></nav>
+
+        <div class="act-noti" id="act-noti">
+            <p id="act-noti-text">act 01. intro: protector's death</p>
+        </div>
+
+        <div class="act-container" id="act-1-container">
+            <div class="act-container-img">
+                <img class="act-img" id="act-1-img" src="/img/act01/1.jpg" alt="">
+                <div class="img-next" id="img-next-1"></div>
+                <div class="img-prev" id="img-prev-1"></div>
+            </div>
+            <div class="act-container-text"></div>
+        </div>
+
+        <div class="act-container act2-17" id="act-2-container">
+            <div class="act-container-img">
+                <img class="act-img" id="act-2-img" src="/img/act02/1.jpg" alt="">
+                <div class="img-next" id="img-next-2"></div>
+                <div class="img-prev" id="img-prev-2"></div>
+            </div>
+            <div class="act-container-text"></div>
+        </div>
+
+        <div class="act-container act2-17" id="act-3-container">
+            <div class="act-container-img">
+                <img class="act-img" id="act-3-img" src="/img/act03/1.jpg" alt="">
+                <div class="img-next" id="img-next-3"></div>
+                <div class="img-prev" id="img-prev-3"></div>
+            </div>
+            <div class="act-container-text"></div>
+        </div>
+
+
+
+
+    </div>
+
+
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+    <script src="js/theater.js"></script>
+    <script src="js/circle.js"></script>
+</body>
+
+</html>

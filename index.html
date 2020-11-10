@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ngoc ha's portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/preloader.css">
+
+</head>
+
+<body>
+    <!-- <div class="preloader" id="preloader">
+        <img id="gif" src="/preloader/loading.gif" alt="">
+        <p id="p-loading">loading portfolio</p>
+        <p id="p-media-control">your experience will be much better if you let me play you some beautiful music</p>
+        <div class="music-rights" id="allow-music"></div>
+        <div class="music-rights" id="deny-music"></div>
+    </div> -->
+
+    <audio id="music-tag" loop="loop" src="music/1.mp3" type="audio/mpeg"></audio>
+    <audio id="music-tag-2" loop="loop" src="music/2.mp3" type="audio/mpeg"></audio>
+    <audio id="music-tag-3" loop="loop" src="music/3.mp3" type="audio/mpeg"></audio>
+
+    <div class="media-control" id="play"></div>
+    <div class="media-control" id="pause"></div>
+    <div class="media-control" id="audio-next"></div>
+    <div class="media-control" id="audio-prev"></div>
+    <p id="playing">Playing</p>
+    <p id="play-now"></p>
+
+    <div id="menu"></div>
+    <div class="menu-container">
+        <div id="close"></div>
+        <p id="title" class="nav-menu">ngoc ha's portfolio</p>
+        <p id="nav-music" class="nav-menu">music</p>
+        <p id="nav-theater" class="nav-menu">theater</p>
+
+        <p id="nav-contact" class="nav-menu">contact</p>
+        <p id="nav-contact-2" class="nav-menu">contact</p>
+        <p id="contact-name" class="nav-contact-details">nguyen ngoc ha</p>
+        <p id="contact-phone" class="nav-contact-details">0xxxxxxxxx</p>
+        <p id="contact-email" class="nav-contact-details">someone@email.com</p>
+
+        <a href="https://www.facebook.com/tuanng1603/" target="_blank">
+            <p id="credit" class="nav-menu">developed by canhtuan</p>
+        </a>
+
+    </div>
+
+    <div class="container" id="container">
+        <span id="circle" class="circle"></span>
+        <nav class="header">
+            <a id="logo" href="#">ngoc ha</a>
+        </nav>
+        <p class="power-guide change-site" id="guide-1">click the power button to see more</p>
+        <p class="power-guide change-site" id="guide-2">drag or scroll the mic to inspect</p>
+        <p class="power-guide change-site" id="guide-3">If you spam me, the website will be very laggy. So don't. Please, I'm
+            serious. DON'T</p>
+        <div class="change-site" id="power"></div>
+        <div class="change-site" id="power-2"></div>
+
+        <p class="f-container-text f-container" id="hi">hi all,</p>
+        <p class="f-container-text f-container" id="intro-1">my name is nguyen ngoc ha. I am living in hanoi.</p>
+        <p class="f-container-text f-container" id="intro-2">I have a huge passion for music and theater.</p>
+        <p class="f-container-text f-container" id="intro-3">hope you will have a wonderful tour here.</p>
+        <p class="f-container-text f-container" id="intro-4">have a good day. thx all</p>
+
+        <img class="f-container" id="neon-1" src="/gif/neon1.gif" alt="">
+        <!-- <img id="soundwave" src="/gif/soundwave.gif" alt=""> -->
+        <img class="f-container" id="ngocha-gif" src="/gif/ngocha.gif" alt="">
+
+    </div>
+
+
+    <script src="js/three.min.js"></script>
+    <script src="js/smoothZoom.js"></script>
+    <script src="js/GLTFLoader.js"></script>
+    <script src="js/OrbitControls.js"></script>
+    <script src="js/TrackballControls.js"></script>
+    <script src="js/3d.js"></script>
+    <!-- <script src="js/transition.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/circle.js"></script>
+</body>
+
+</html>

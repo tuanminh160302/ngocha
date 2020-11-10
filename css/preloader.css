@@ -1,0 +1,69 @@
+.preloader {
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: 'raleway';
+    box-sizing: border-box;
+    opacity: 1;
+    position: absolute;
+    z-index: 1000000;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.preloader img {
+    height: 50vh;
+    width: 50vh;
+}
+
+#p-loading {
+    color: white;
+    margin-top: 10vh;
+    font-size: 1.25em;
+}
+
+#p-media-control {
+    color: white;
+    font-size: 1.25em;
+    opacity: 0;
+    display: none;
+}
+
+#glams-preloader {
+    color: white;
+    font-size: 2em;
+    opacity: 0;
+    display: none;
+}
+
+.music-rights {
+    height: 3vh;
+    width: 3vh;
+    position: absolute;
+    cursor: pointer;
+    opacity: 0;
+    display: none;
+}
+
+#allow-music {
+    background-image: url(/button/yes.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    top: 60vh;
+    left: 47vw;
+}
+
+#deny-music {
+    background-image: url(/button/no.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    top: 60vh;
+    right: 47vw;
+}

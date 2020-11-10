@@ -1,0 +1,439 @@
+@font-face {
+    font-family: 'Brown';
+    src: url('/fonts/BrownMediumRegular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'raleway';
+    src: url('/fonts/Raleway-VariableFont_wght.ttf') format('truetype');
+}
+
+html, body{
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: 'raleway';
+    box-sizing: border-box;
+}
+
+.circle {
+	position: absolute;
+    border: solid 1px #ccc;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;  
+    z-index: 50;
+    background: transparent;
+}
+
+.header {
+    height: 10vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+}
+
+.header a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.8rem;
+}
+
+#logo {
+    position: absolute;
+    left: 3vw;
+    top: 4vh;
+    z-index: 1000;
+}
+
+#menu {
+    height: 3vh;
+    width: 3vh;
+    position: absolute;
+    right: 3vw;
+    top: 4vh;
+    background-image: url(/button/menu-white.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    z-index: 1000;
+    transition: 1s;
+}
+
+#menu:hover {
+    transform: rotate(360deg);
+    transition: 1s;
+}
+
+.menu-container {
+    height: 100vh;
+    width: 30vw;
+    margin: 0;
+    padding: 0;
+    z-index: 2000;
+    background-color: white;
+    position: absolute;
+    right: 0;
+    transform: translateX(30vw);
+}
+
+.nav-menu {
+    position: absolute;
+    left: 4vw;
+    margin: 0;
+}
+
+#title {
+    cursor: default;
+    top: 12vh;
+    font-size: 2em;
+    border: 1.4px solid black;
+    padding: 10px;
+    font-style: italic;
+}
+
+#nav-music {
+    cursor: pointer;
+    top: 27vh;
+    font-size: 2em;
+}
+
+#nav-theater {
+    cursor: pointer;
+    top: 37vh;
+    font-size: 2em;
+}
+
+#nav-contact {
+    cursor: pointer;
+    top: 47vh;
+    font-size: 2em;
+}
+
+#nav-contact-2 {
+    cursor: pointer;
+    top: 47vh;
+    font-size: 2em;
+    display: none;
+}
+
+.nav-contact-details {
+    opacity: 0;
+}
+
+#contact-name {
+    cursor: default;
+    top: 60vh;
+    font-size: 1.2em;
+    position: absolute;
+    right: 3vw;
+    margin: 0;
+}
+
+#contact-phone {
+    cursor: default;
+    top: 67vh;
+    font-size: 1.2em;
+    position: absolute;
+    right: 3vw;
+    margin: 0;
+}
+
+#contact-email {
+    cursor: default;
+    top: 74vh;
+    font-size: 1.2em;
+    position: absolute;
+    right: 3vw;
+    margin: 0;
+}
+
+#credit {
+    cursor: pointer;
+    bottom: 4vh;
+    font-size: 1.2em;
+    position: absolute;
+    left: 4vw;
+    position: absolute;
+    margin: 0;
+    color: black;
+    text-decoration: none;
+}
+
+#credit::before {
+    content: '';
+    display: block;
+    border-bottom: 1px solid black;
+    margin-bottom: 8px;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: .5s;
+}
+
+#credit:hover::before {
+    transform: scaleX(1);
+    transition: .5s;
+}
+
+#credit::after {
+    content: '';
+    display: block;
+    border-bottom: 1px solid black;
+    margin-top: 8px;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: .5s;
+}
+
+#credit:hover::after {
+    transform: scaleX(1);
+    transition: .5s;
+}
+
+#close {
+    height: 3vh;
+    width: 3vh;
+    position: absolute;
+    right: 3vw;
+    top: 4vh;
+    background-image: url(/button/close.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    transition: 1s;
+    z-index: 2000;
+}
+
+#close:hover {
+    transform: rotate(360deg);
+    transition: 1s;
+}
+
+.power-guide {
+    position: absolute;
+    color: white;
+    z-index: 1000;
+    font-size: .8em;
+    font-style: italic;
+    margin: 0;
+    cursor: default;
+}
+
+#guide-1 {
+    top: 5vh;
+    right: 50vw;
+    transform: translateX(-3vw);
+}
+
+#guide-2 {
+    top: 5vh;
+    left: 50vw;
+    transform: translateX(3vw);
+}
+
+#guide-3 {
+    top: 10vh;
+    left: 50vw;
+    transform: translateX(-50%);
+    opacity: 0;
+}
+
+#power {
+    height: 3vh;
+    width: 3vh;
+    position: absolute;
+    left: calc(50vw - 1.5vh);
+    top: 4vh;
+    background-image: url(/button/on.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+#power-2 {
+    height: 3vh;
+    width: 3vh;
+    position: absolute;
+    left: calc(50vw - 1.5vh);
+    top: 4vh;
+    background-image: url(/button/on.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    z-index: 1000;
+    display: none;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    background: black;
+    z-index: 1000;
+}
+
+
+
+canvas {
+    position: absolute;
+    height: 100vh !important;
+    width: 100vw !important;
+    background: black;
+    z-index: 200;
+    /* transform: translateX(-100%); */
+    /* display: none; */
+}
+
+.media-control {
+    position: fixed;
+    height: 3vh;
+    width: 3vh;
+    z-index: 1000;
+    cursor: pointer;
+}
+
+#play {
+    background-image: url(/button/play.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    bottom: 4vh;
+    left: 3vw;
+    display: none;
+    opacity: 0;
+}
+
+#pause {
+    background-image: url(/button/pause.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    bottom: 4vh;
+    left: 3vw;
+    display: none;
+    opacity: 0;
+}
+
+#audio-next {
+    background-image: url(/button/audio-next.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    bottom: 4vh;
+    left: 9vw;
+}
+
+#audio-prev {
+    background-image: url(/button/audio-prev.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    bottom: 4vh;
+    left: 6vw;
+}
+
+#playing {
+    bottom: 4vh;
+    left: 15vw;
+    color: white;
+    position: absolute;
+    z-index: 1000;
+    cursor: default;
+    margin: 0;
+}
+
+#play-now {
+    bottom: 4vh;
+    left: 20vw;
+    color: white;
+    font-style: italic;
+    position: absolute;
+    z-index: 1000;
+    cursor: default;
+    margin: 0;
+}
+
+@keyframes neon {
+    from {
+        text-shadow: 0 0 6px rgba(202, 228, 225, 0.92), 0 0 30px rgba(202, 228, 225, 0.34), 0 0 12px rgba(30, 132, 242, 0.52), 0 0 21px rgba(30, 132, 242, 0.92), 0 0 34px rgba(30, 132, 242, 0.78), 0 0 54px rgba(30, 132, 242, 0.92);
+   }
+    to {
+        text-shadow: 0 0 6px rgba(202, 228, 225, 0.98), 0 0 30px rgba(202, 228, 225, 0.42), 0 0 12px rgba(30, 132, 242, 0.58), 0 0 22px rgba(30, 132, 242, 0.84), 0 0 38px rgba(30, 132, 242, 0.88), 0 0 60px rgba(30, 132, 242, 1);
+   }
+}
+
+.f-container-text {
+    color: white;
+    z-index: 100;
+    font-size: 1.1em;
+    position: absolute;
+    cursor: default;
+    animation: neon 0.08s ease-in-out infinite alternate;
+    margin: 0;
+}
+
+#hi {
+    top: 30vh;
+    left: 60vw;
+}
+
+#intro-1 {
+    top: 38vh;
+    left: 60vw;
+}
+
+#intro-2 {
+    top: 46vh;
+    left: 60vw;
+}
+
+#intro-3 {
+    top: 54vh;
+    left: 60vw;
+}
+
+#intro-4 {
+    top: 62vh;
+    left: 60vw;
+}
+
+#neon-1 {
+    z-index: 40;
+    height: 40vh;
+    width: 40vh;
+    position: absolute;
+    top: 20vh;
+    right: 10vw;
+}
+
+#soundwave {
+    z-index: 40;
+    height: 20vh;
+    width: 20vh;
+    position: absolute;
+    top: 50vh;
+    left: 55vw;
+}
+
+#ngocha-gif {
+    z-index: 40;
+    height: 45vh;
+    width: 45vh;
+    position: absolute;
+    top: 50vh;
+    left: calc(50vw - 60vh);
+    transform: 
+    translateY(-50%);
+}
+
+.f-container {
+    opacity: 0;
+}
