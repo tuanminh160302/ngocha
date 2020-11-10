@@ -1,4 +1,5 @@
 window.onload = () => {
+    TweenMax.to('.act2-17', 0, { display: 'none'});
     setTimeout(() => {
         TweenMax.to('#gif', 0.4, { opacity: 0 });
         TweenMax.to('#p-loading', 0.4, { opacity: 0 });

@@ -52,7 +52,11 @@ html, body {
 }
 
 .act2-17 {
-    display: none;
+    display: block;
+}
+
+.unload-act-img {
+    opacity: 0 !important;
 }
 
 .act-container-img {
@@ -71,10 +75,6 @@ html, body {
     top: 10vh;
     left: 50%;
     transform: translateX(-50%);
-}
-
-.unload-act-img {
-    opacity: 0 !important;
 }
 
 .img-next {
