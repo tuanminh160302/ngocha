@@ -73,6 +73,10 @@ html, body {
     transform: translateX(-50%);
 }
 
+.unload-act-img {
+    opacity: 0 !important;
+}
+
 .img-next {
     height: 3vh;
     width: 3vh;
