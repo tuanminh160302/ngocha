@@ -39,6 +39,19 @@
     font-size: 2em;
     opacity: 0;
     display: none;
+    margin: 0;
+}
+
+#glams-description {
+    position: absolute;
+    color: white;
+    font-size: 1em;
+    opacity: 0;
+    display: none;
+    margin: 0;
+    width: 50vw;
+    top: 30vh;
+    line-height: 80px;
 }
 
 .music-rights {
@@ -66,6 +79,22 @@
     background-repeat: no-repeat;
     top: 60vh;
     right: 47vw;
+}
+
+#understand {
+    height: 3vh;
+    width: 3vh;
+    position: absolute;
+    cursor: pointer;
+    z-index: 2000000;
+    background-image: url(/button/understand.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    bottom: 20vh;
+    left: calc(50vw - 1.5vh);
+    opacity: 0;
+    display: none;
 }
 
 p {

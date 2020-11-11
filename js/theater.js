@@ -11,22 +11,21 @@ window.onload = () => {
         TweenMax.to('.music-rights', 0.4, { delay: 2.25, opacity: 1 });
         TweenMax.to('#p-media-control', 0.4, { delay: 1, opacity: 1 });
 
-        document.getElementById('allow-music').addEventListener('click', () => {
-            TweenMax.to('.container', 0, { delay: 7.3, webkitFilter: 'blur(0px)'});
-            TweenMax.to('#circle', 0, { delay: 7.3, zIndex: '50'});
+        document.getElementById('understand').addEventListener('click',()=> {
+            TweenMax.to('.container', 0, { delay: 3, webkitFilter: 'blur(0px)'});
+            TweenMax.to('#circle', 0, { delay: 3, zIndex: '50'});
+            TweenMax.to('.preloader', 1.1, { y: '-101vh', ease: Power4.easeInOut });
+            TweenMax.to('.act-noti', .3, { delay: 2.7, opacity: 0 });
+            TweenMax.to('.act-noti', 0, { delay: 3, display: 'none' });
+            document.getElementById('play-now').innerText = 'Friends on the other side'
+            TweenMax.to('#understand', 0, { delay: .5, display: 'none'});
+            TweenMax.to('#understand', .5, { opacity: 0});
+            TweenMax.to('.preloader', 0, { delay: 1.1, display: 'none'});
+        })
 
+        document.getElementById('allow-music').addEventListener('click', () => {
             TweenMax.to('#volume-off', 0, { display: 'none', opacity: 0});
             TweenMax.to('#volume-on', 0, { display: 'block', opacity: 1});
-
-            TweenMax.to('.preloader', 1.1, { delay: 4.5, y: '-101vh', ease: Power4.easeInOut });
-            TweenMax.to('.act-noti', .3, { delay: 7, opacity: 0 });
-            TweenMax.to('.act-noti', 0, { delay: 7.3, display: 'none' });
-
-            TweenMax.to('#gif', 0, { delay: 5.6, opacity: 1 });
-            TweenMax.to('#p-loading', 0, { delay: 5.6, opacity: 1 });
-            TweenMax.to('#gif', 0, { delay: 5.6, display: 'block' });
-            TweenMax.to('#p-loading', 0, { delay: 5.6, display: 'block' });
-
 
             TweenMax.to('.music-rights', 0, { delay: 0.4, display: 'none' });
             TweenMax.to('#p-media-control', 0, { delay: 0.4, display: 'none' });
@@ -35,37 +34,24 @@ window.onload = () => {
 
             TweenMax.to('#glams-preloader', .0, { delay: .5, display: 'block' });
             TweenMax.to('#glams-preloader', 2, { delay: 1, opacity: 1 });
-
-
-            setTimeout(() => {
-                document.getElementById('music-tag-1').play();
-                document.getElementById('music-tag-2').pause();
-                document.getElementById('music-tag-3').pause();
-                document.getElementById('music-tag-4').pause();
-                document.getElementById('music-tag-5').pause();
-                document.getElementById('music-tag-6').pause();
-                document.getElementById('music-tag-7').pause();
-                document.getElementById('music-tag-8').pause();
-                document.getElementById('music-tag-9').pause();
-                document.getElementById('music-tag-10').pause();
-                document.getElementById('music-tag-11').pause();
-                document.getElementById('music-tag-12').pause();
-                document.getElementById('music-tag-13').pause();
-                document.getElementById('music-tag-14').pause();
-                document.getElementById('music-tag-15').pause();
-                document.getElementById('music-tag-16').pause();
-                document.getElementById('music-tag-17').pause();
-            }, 000)
+            TweenMax.to('#glams-preloader', .7, { delay: 3.3, y: '-30vh', ease: Power4.easeInOut});
+            TweenMax.to('#glams-description', 0, { delay: 4.5, display: 'block'});
+            TweenMax.to('#glams-description', .5, { delay: 4.5, opacity: 1});
+            TweenMax.to('#understand', 0, { delay: 6, display: 'block'});
+            TweenMax.to('#understand', .5, { delay: 6, opacity: 1});
 
             TweenMax.to('#pause', 0, { display: 'block', opacity: 1 });
             TweenMax.to('#play', 0, { display: 'none', opacity: 0 });
-            document.getElementById('play-now').innerText = 'Friends on the other side'
+
+            setTimeout(() => {
+                document.getElementById('music-tag-1').play();
+                for (i=2; i<18; i++){
+                    document.getElementById(`music-tag-${i}`).pause();
+                }
+            }, 000)
         })
 
         document.getElementById('deny-music').addEventListener('click', () => {
-            TweenMax.to('.container', 0, { delay: 7.3, webkitFilter: 'blur(0px)'});
-            TweenMax.to('#circle', 0, { delay: 7.3, zIndex: '50'});
-
             for (i = 1; i < 18; i++) {
                 document.getElementById(`music-tag-${i}`).pause();
             }
@@ -80,15 +66,6 @@ window.onload = () => {
                 TweenMax.to('#volume-on', 0, { delay: .3, display: 'block' });
                 TweenMax.to('#volume-on', .3, { delay: .3, opacity: 1 });
             })
-            TweenMax.to('.preloader', 1.1, { delay: 4.5, y: '-101vh', ease: Power4.easeInOut });
-            TweenMax.to('.act-noti', .3, { delay: 7, opacity: 0 });
-            TweenMax.to('.act-noti', 0, { delay: 7.3, display: 'none' });
-
-            TweenMax.to('#gif', 0, { delay: 5.6, opacity: 1 });
-            TweenMax.to('#p-loading', 0, { delay: 5.6, opacity: 1 });
-            TweenMax.to('#gif', 0, { delay: 5.6, display: 'block' });
-            TweenMax.to('#p-loading', 0, { delay: 5.6, display: 'block' });
-
 
             TweenMax.to('.music-rights', 0, { delay: 0.4, display: 'none' });
             TweenMax.to('#p-media-control', 0, { delay: 0.4, display: 'none' });
@@ -97,10 +74,14 @@ window.onload = () => {
 
             TweenMax.to('#glams-preloader', .0, { delay: .5, display: 'block' });
             TweenMax.to('#glams-preloader', 2, { delay: 1, opacity: 1 });
+            TweenMax.to('#glams-preloader', .7, { delay: 3.3, y: '-30vh', ease: Power4.easeInOut});
+            TweenMax.to('#glams-description', 0, { delay: 4.5, display: 'block'});
+            TweenMax.to('#glams-description', .5, { delay: 4.5, opacity: 1});
+            TweenMax.to('#understand', 0, { delay: 6, display: 'block'});
+            TweenMax.to('#understand', .5, { delay: 6, opacity: 1});
 
             TweenMax.to('#play', 0, { display: 'block', opacity: 1 });
             TweenMax.to('#pause', 0, { display: 'none', opacity: 0 });
-            document.getElementById('play-now').innerText = 'Friends on the other side'
         })
         // TweenMax.to('.preloader', 1.1, { y: '-101vh', ease: Power4.easeInOut});
         TweenMax.to('.act2-17', 0, { display: 'none'});
