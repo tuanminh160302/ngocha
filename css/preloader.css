@@ -47,7 +47,6 @@
     position: absolute;
     cursor: pointer;
     opacity: 0;
-    display: none;
     z-index: 2000000;
 }
 

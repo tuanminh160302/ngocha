@@ -40,6 +40,18 @@ html, body {
     opacity: 0;
 }
 
+#act-info {
+    color: white;
+    position: absolute;
+    bottom: 4vh;
+    z-index: 1000;
+    cursor: default;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+    /* animation: neon 0.08s ease-in-out infinite alternate; */
+}
+
 .act-noti {
     height: 100vh;
     width: 100vw;
@@ -76,10 +88,61 @@ html, body {
 .act-container-img {
     position: absolute;
     height: 90vh;
-    width: 70vw;
+    width: 60vw;
     left: 0;
     top: 0;
 }
+
+.act-container-text {
+    position: absolute;
+    height: 90vh;
+    width: 40vw;
+    right: 0;
+    top: 0;
+}
+
+.act-text {
+    height: 60vh;
+    width: 65%;
+    color: white;
+    font-size: 1em;
+    line-height: 70px;
+    margin: 0;
+    position: absolute;
+    top: 10vh;
+    left: 5vw;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+#scroll-to-read {
+    position: absolute;
+    color: white;
+    font-style: italic;
+    z-index: 1000;
+    bottom: 15vh;
+    right: 35vw;
+    margin: 0;
+    animation: neon 0.08s ease-in-out infinite alternate;
+    transform: translateX(100%);
+    opacity: 0;
+    cursor: default;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: black; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: white; 
+  }
 
 .act-img {
     position: absolute;
@@ -96,12 +159,12 @@ html, body {
     width: 3vh;
     position: absolute;
     cursor: pointer;
-    background-image: url(/button/next.gif);
+    background-image: url(/button/next-white.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     top: calc(40vh - 1.5vh);
-    right: 3vw;
+    right: 1vw;
     z-index: 1000;
 }
 
@@ -110,13 +173,12 @@ html, body {
     width: 3vh;
     position: absolute;
     cursor: pointer;
-    background-image: url(/button/next.gif);
+    background-image: url(/button/prev-white.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    transform: rotate(180deg);
     top: calc(40vh - 1.5vh);
-    left: 3vw;
+    left: 1vw;
     z-index: 1000;
     opacity: 1;
     display: none;
@@ -126,6 +188,17 @@ html, body {
     bottom: 4vh;
     left: 7vw !important;
     color: white;
+    position: absolute;
+    z-index: 1000;
+    cursor: default;
+    margin: 0;
+}
+
+#play-now {
+    bottom: 4vh;
+    left: 12vw !important;
+    color: white;
+    font-style: italic;
     position: absolute;
     z-index: 1000;
     cursor: default;

@@ -222,7 +222,7 @@ document.getElementById('pause').addEventListener('click', () => {
 
 document.getElementById('menu').addEventListener('click', () => {
     TweenMax.to('.menu-container', 1.1, { x: '0', ease: Power4.easeInOut });
-    TweenMax.to('.container', 1.1, { x: '-30vw', ease: Power4.easeInOut });
+    TweenMax.to('.container', 1.1, { x: '-30vw', ease: Power4.easeInOut});
     TweenMax.to('#circle', .2, { opacity: 0 });
     TweenMax.to('#circle', 0, { delay: .2, display: 'none' });
 });
@@ -314,6 +314,7 @@ document.getElementById('nav-theater').addEventListener('click', ()=> {
     TweenMax.to('.f-container', 0, { delay: 1.6, display: 'none' });
     TweenMax.to('.change-site', .5, { delay: 1.1, opacity: 0 });
     TweenMax.to('.change-site', 0, { delay: 1.6, display: 'none' });
+    TweenMax.to('#menu', 0, { display: 'none' });
     setTimeout(()=> {
         document.location.href = 'theater.html'
     }, 1800)

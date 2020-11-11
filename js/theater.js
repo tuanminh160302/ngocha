@@ -6,12 +6,13 @@ window.onload = () => {
         TweenMax.to('#p-loading', 0, { delay: .4, display: 'none' });
 
 
-        TweenMax.to('.music-rights', 0, { delay: 2.25, display: 'block' });
+        // TweenMax.to('.music-rights', 0, { delay: 2.25, display: 'block' });
         TweenMax.to('#p-media-control', 0, { delay: 1, display: 'block' });
         TweenMax.to('.music-rights', 0.4, { delay: 2.25, opacity: 1 });
         TweenMax.to('#p-media-control', 0.4, { delay: 1, opacity: 1 });
 
         document.getElementById('allow-music').addEventListener('click', () => {
+            TweenMax.to('.container', 0, { delay: 7.3, webkitFilter: 'blur(0px)'});
             TweenMax.to('#circle', 0, { delay: 7.3, zIndex: '50'});
 
             TweenMax.to('#volume-off', 0, { display: 'none', opacity: 0});
@@ -62,6 +63,7 @@ window.onload = () => {
         })
 
         document.getElementById('deny-music').addEventListener('click', () => {
+            TweenMax.to('.container', 0, { delay: 7.3, webkitFilter: 'blur(0px)'});
             TweenMax.to('#circle', 0, { delay: 7.3, zIndex: '50'});
 
             for (i = 1; i < 18; i++) {
@@ -163,132 +165,228 @@ document.getElementById('next-act').addEventListener('click', () => {
         TweenMax.to('#prev-act', 0, { display: 'block' });
         TweenMax.to('#prev-act', .3, { delay: .2, opacity: 1 });
         document.getElementById('act-noti-text').innerText = 'act 02. alice in the wonderland'
+        setTimeout(()=> {
+            document.getElementById('act-info').innerText = 'act 02. alice in the wonderland'
+        }, 500)
         for (i = 1; i < 18; i++) {
             document.getElementById(`music-tag-${i}`).pause();
         }
         document.getElementById(`music-tag-${actControls}`).play();
+        setTimeout(()=> {
+            document.getElementById('play-now').innerText = 'act2'
+        }, 500);
     }
 
     else if (actControls == 3) {
         document.getElementById('act-noti-text').innerText = 'act 03. quarrels and rumors'
+        setTimeout(()=> {
+            document.getElementById('act-info').innerText = 'act 03. quarrels and rumors'
+        }, 500)
         for (i = 1; i < 18; i++) {
             document.getElementById(`music-tag-${i}`).pause();
         }
         document.getElementById(`music-tag-${actControls}`).play();
+        setTimeout(()=> {
+            document.getElementById('play-now').innerText = 'act3'
+        }, 500);
     }
 
     else if (actControls == 4) {
         document.getElementById('act-noti-text').innerText = 'act 04. one for roxie, one for harry'
+        setTimeout(()=> {
+            document.getElementById('act-info').innerText = 'act 04. one for roxie, one for harry'
+        }, 500)
         for (i = 1; i < 18; i++) {
             document.getElementById(`music-tag-${i}`).pause();
         }
         document.getElementById(`music-tag-${actControls}`).play();
+        setTimeout(()=> {
+            document.getElementById('play-now').innerText = 'act4'
+        }, 500);
     }
 
     else if (actControls == 5) {
         document.getElementById('act-noti-text').innerText = 'act 05. love is both life and death'
+        setTimeout(()=> {
+            document.getElementById('act-info').innerText = 'act 05. love is both life and death'
+        }, 500)
         for (i = 1; i < 18; i++) {
             document.getElementById(`music-tag-${i}`).pause();
         }
         document.getElementById(`music-tag-${actControls}`).play();
+        setTimeout(()=> {
+            document.getElementById('play-now').innerText = 'act5'
+        }, 500);
     }
 
     else if (actControls == 6) {
         document.getElementById('act-noti-text').innerText = 'act 06. roxie is the witch!'
+        setTimeout(()=> {
+            document.getElementById('act-info').innerText = 'act 06. roxie is the witch!'
+        }, 500)
         for (i = 1; i < 18; i++) {
             document.getElementById(`music-tag-${i}`).pause();
         }
         document.getElementById(`music-tag-${actControls}`).play();
+        setTimeout(()=> {
+            document.getElementById('play-now').innerText = 'act6'
+        }, 500);
     }
 
     else if (actControls == 7) {
         document.getElementById('act-noti-text').innerText = 'act 07. give him the candy'
+        setTimeout(()=> {
+            document.getElementById('act-info').innerText = 'act 07. give him the candy'
+        }, 500)
         for (i = 1; i < 18; i++) {
             document.getElementById(`music-tag-${i}`).pause();
         }
         document.getElementById(`music-tag-${actControls}`).play();
+        setTimeout(()=> {
+            document.getElementById('play-now').innerText = 'act7'
+        }, 500);
     }
 
     else if (actControls == 8) {
         document.getElementById('act-noti-text').innerText = 'act 08. layla is dead'
+        setTimeout(()=> {
+            document.getElementById('act-info').innerText = 'act 08. layla is dead'
+        }, 500)
         for (i = 1; i < 18; i++) {
             document.getElementById(`music-tag-${i}`).pause();
         }
         document.getElementById(`music-tag-${actControls}`).play();
+        setTimeout(()=> {
+            document.getElementById('play-now').innerText = 'act8'
+        }, 500);
     }
 
     else if (actControls == 9) {
         document.getElementById('act-noti-text').innerText = 'act 09. the second wolf'
+        setTimeout(()=> {
+            document.getElementById('act-info').innerText = 'act 09. the second wolf'
+        }, 500)
         for (i = 1; i < 18; i++) {
             document.getElementById(`music-tag-${i}`).pause();
         }
         document.getElementById(`music-tag-${actControls}`).play();
+        setTimeout(()=> {
+            document.getElementById('play-now').innerText = 'act9'
+        }, 500);
     }
 
     else if (actControls == 10) {
         document.getElementById('act-noti-text').innerText = "act 10. bonnie'memorabilia"
+        setTimeout(()=> {
+            document.getElementById('act-info').innerText = "act 10. bonnie'memorabilia"
+        }, 500)
         for (i = 1; i < 18; i++) {
             document.getElementById(`music-tag-${i}`).pause();
         }
         document.getElementById(`music-tag-${actControls}`).play();
+        setTimeout(()=> {
+            document.getElementById('play-now').innerText = 'act10'
+        }, 500);
     }
 
     else if (actControls == 11) {
         document.getElementById('act-noti-text').innerText = 'act 11. ...is auntie may'
+        setTimeout(()=> {
+            document.getElementById('act-info').innerText = 'act 11. ...is auntie may'
+        }, 500)
         for (i = 1; i < 18; i++) {
             document.getElementById(`music-tag-${i}`).pause();
         }
         document.getElementById(`music-tag-${actControls}`).play();
+        setTimeout(()=> {
+            document.getElementById('play-now').innerText = 'act11'
+        }, 500);
     }
 
     else if (actControls == 12) {
         document.getElementById('act-noti-text').innerText = 'act 12. finding proof'
+        setTimeout(()=> {
+            document.getElementById('act-info').innerText = 'act 12. finding proof'
+        }, 500)
         for (i = 1; i < 18; i++) {
             document.getElementById(`music-tag-${i}`).pause();
         }
         document.getElementById(`music-tag-${actControls}`).play();
+        setTimeout(()=> {
+            document.getElementById('play-now').innerText = 'act12'
+        }, 500);
     }
 
     else if (actControls == 13) {
         document.getElementById('act-noti-text').innerText = 'act 13. execution day'
+        setTimeout(()=> {
+            document.getElementById('act-info').innerText = 'act 13. execution day'
+        }, 500)
         for (i = 1; i < 18; i++) {
             document.getElementById(`music-tag-${i}`).pause();
         }
         document.getElementById(`music-tag-${actControls}`).play();
+        setTimeout(()=> {
+            document.getElementById('play-now').innerText = 'act13'
+        }, 500);
     }
 
     else if (actControls == 14) {
         document.getElementById('act-noti-text').innerText = 'act 14. triumph celebration'
+        setTimeout(()=> {
+            document.getElementById('act-info').innerText = 'act 14. triumph celebration'
+        }, 500)
         for (i = 1; i < 18; i++) {
             document.getElementById(`music-tag-${i}`).pause();
         }
         document.getElementById(`music-tag-${actControls}`).play();
+        setTimeout(()=> {
+            document.getElementById('play-now').innerText = 'act14'
+        }, 500);
     }
 
     else if (actControls == 15) {
         document.getElementById('act-noti-text').innerText = 'act 15. fake ending'
+        setTimeout(()=> {
+            document.getElementById('act-info').innerText = 'act 15. fake ending'
+        }, 500)
         for (i = 1; i < 18; i++) {
             document.getElementById(`music-tag-${i}`).pause();
         }
         document.getElementById(`music-tag-${actControls}`).play();
+        setTimeout(()=> {
+            document.getElementById('play-now').innerText = 'act15'
+        }, 500);
     }
 
     else if (actControls == 16) {
         document.getElementById('act-noti-text').innerText = 'act 16. the cursed'
+        setTimeout(()=> {
+            document.getElementById('act-info').innerText = 'act 16. the cursed'
+        }, 500)
         for (i = 1; i < 18; i++) {
             document.getElementById(`music-tag-${i}`).pause();
         }
         document.getElementById(`music-tag-${actControls}`).play();
+        setTimeout(()=> {
+            document.getElementById('play-now').innerText = 'act16'
+        }, 500);
     }
 
     else if (actControls == 17) {
         TweenMax.to('#next-act', 0, { delay: .2, display: 'none' });
         TweenMax.to('#next-act', 0, { delay: .2, opacity: 0 });
         document.getElementById('act-noti-text').innerText = 'act 17. outro: the last wolf'
+        setTimeout(()=> {
+            document.getElementById('act-info').innerText = 'act 17. outro: the last wolf'
+        }, 500)
         for (i = 1; i < 18; i++) {
             document.getElementById(`music-tag-${i}`).pause();
         }
         document.getElementById(`music-tag-${actControls}`).play();
+        setTimeout(()=> {
+            document.getElementById('play-now').innerText = 'act17'
+        }, 500);
     }
 })
 
@@ -312,132 +410,228 @@ document.getElementById('prev-act').addEventListener('click', () => {
         TweenMax.to('#prev-act', 0, { delay: .2, display: 'none' });
         TweenMax.to('#prev-act', 0, { delay: .2, opacity: 0 });
         document.getElementById('act-noti-text').innerText = "act 01. intro: protector's death"
+        setTimeout(()=> {
+            document.getElementById('act-info').innerText = "act 01. intro: protector's death"
+        }, 500)
         for (i = 1; i < 18; i++) {
             document.getElementById(`music-tag-${i}`).pause();
         }
         document.getElementById(`music-tag-${actControls}`).play();
+        setTimeout(()=> {
+            document.getElementById('play-now').innerText = 'act1'
+        }, 500);
     }
 
     if (actControls == 2) {
         document.getElementById('act-noti-text').innerText = 'act 02. alice in the wonderland'
+        setTimeout(()=> {
+            document.getElementById('act-info').innerText = 'act 02. alice in the wonderland'
+        }, 500)
         for (i = 1; i < 18; i++) {
             document.getElementById(`music-tag-${i}`).pause();
         }
         document.getElementById(`music-tag-${actControls}`).play();
+        setTimeout(()=> {
+            document.getElementById('play-now').innerText = 'act2'
+        }, 500);
     }
 
     else if (actControls == 3) {
         document.getElementById('act-noti-text').innerText = 'act 03. quarrels and rumors'
+        setTimeout(()=> {
+            document.getElementById('act-info').innerText = 'act 03. quarrels and rumors'
+        }, 500)
         for (i = 1; i < 18; i++) {
             document.getElementById(`music-tag-${i}`).pause();
         }
         document.getElementById(`music-tag-${actControls}`).play();
+        setTimeout(()=> {
+            document.getElementById('play-now').innerText = 'act3'
+        }, 500);
     }
 
     else if (actControls == 4) {
         document.getElementById('act-noti-text').innerText = 'act 04. one for roxie, one for harry'
+        setTimeout(()=> {
+            document.getElementById('act-info').innerText = 'act 04. one for roxie, one for harry'
+        }, 500)
         for (i = 1; i < 18; i++) {
             document.getElementById(`music-tag-${i}`).pause();
         }
         document.getElementById(`music-tag-${actControls}`).play();
+        setTimeout(()=> {
+            document.getElementById('play-now').innerText = 'act4'
+        }, 500);
     }
 
     else if (actControls == 5) {
         document.getElementById('act-noti-text').innerText = 'act 05. love is both life and death'
+        setTimeout(()=> {
+            document.getElementById('act-info').innerText = 'act 05. love is both life and death'
+        }, 500)
         for (i = 1; i < 18; i++) {
             document.getElementById(`music-tag-${i}`).pause();
         }
         document.getElementById(`music-tag-${actControls}`).play();
+        setTimeout(()=> {
+            document.getElementById('play-now').innerText = 'act5'
+        }, 500);
     }
 
     else if (actControls == 6) {
         document.getElementById('act-noti-text').innerText = 'act 06. roxie is the witch!'
+        setTimeout(()=> {
+            document.getElementById('act-info').innerText = 'act 06. roxie is the witch!'
+        }, 500)
         for (i = 1; i < 18; i++) {
             document.getElementById(`music-tag-${i}`).pause();
         }
         document.getElementById(`music-tag-${actControls}`).play();
+        setTimeout(()=> {
+            document.getElementById('play-now').innerText = 'act6'
+        }, 500);
     }
 
     else if (actControls == 7) {
         document.getElementById('act-noti-text').innerText = 'act 07. give him the candy'
+        setTimeout(()=> {
+            document.getElementById('act-info').innerText = 'act 07. give him the candy'
+        }, 500)
         for (i = 1; i < 18; i++) {
             document.getElementById(`music-tag-${i}`).pause();
         }
         document.getElementById(`music-tag-${actControls}`).play();
+        setTimeout(()=> {
+            document.getElementById('play-now').innerText = 'act7'
+        }, 500);
     }
 
     else if (actControls == 8) {
         document.getElementById('act-noti-text').innerText = 'act 08. layla is dead'
+        setTimeout(()=> {
+            document.getElementById('act-info').innerText = 'act 08. layla is dead'
+        }, 500)
         for (i = 1; i < 18; i++) {
             document.getElementById(`music-tag-${i}`).pause();
         }
         document.getElementById(`music-tag-${actControls}`).play();
+        setTimeout(()=> {
+            document.getElementById('play-now').innerText = 'act8'
+        }, 500);
     }
 
     else if (actControls == 9) {
         document.getElementById('act-noti-text').innerText = 'act 09. the second wolf'
+        setTimeout(()=> {
+            document.getElementById('act-info').innerText = 'act 09. the second wolf'
+        }, 500)
         for (i = 1; i < 18; i++) {
             document.getElementById(`music-tag-${i}`).pause();
         }
         document.getElementById(`music-tag-${actControls}`).play();
+        setTimeout(()=> {
+            document.getElementById('play-now').innerText = 'act9'
+        }, 500);
     }
 
     else if (actControls == 10) {
         document.getElementById('act-noti-text').innerText = "act 10. bonnie'memorabilia"
+        setTimeout(()=> {
+            document.getElementById('act-info').innerText = "act 10. bonnie'memorabilia"
+        }, 500)
         for (i = 1; i < 18; i++) {
             document.getElementById(`music-tag-${i}`).pause();
         }
         document.getElementById(`music-tag-${actControls}`).play();
+        setTimeout(()=> {
+            document.getElementById('play-now').innerText = 'act10'
+        }, 500);
     }
 
     else if (actControls == 11) {
         document.getElementById('act-noti-text').innerText = 'act 11. ...is auntie may'
+        setTimeout(()=> {
+            document.getElementById('act-info').innerText = 'act 11. ...is auntie may'
+        }, 500)
         for (i = 1; i < 18; i++) {
             document.getElementById(`music-tag-${i}`).pause();
         }
         document.getElementById(`music-tag-${actControls}`).play();
+        setTimeout(()=> {
+            document.getElementById('play-now').innerText = 'act11'
+        }, 500);
     }
 
     else if (actControls == 12) {
         document.getElementById('act-noti-text').innerText = 'act 12. finding proof'
+        setTimeout(()=> {
+            document.getElementById('act-info').innerText = 'act 12. finding proof'
+        }, 500)
         for (i = 1; i < 18; i++) {
             document.getElementById(`music-tag-${i}`).pause();
         }
         document.getElementById(`music-tag-${actControls}`).play();
+        setTimeout(()=> {
+            document.getElementById('play-now').innerText = 'act12'
+        }, 500);
     }
 
     else if (actControls == 13) {
         document.getElementById('act-noti-text').innerText = 'act 13. execution day'
+        setTimeout(()=> {
+            document.getElementById('act-info').innerText = 'act 13. execution day'
+        }, 500)
         for (i = 1; i < 18; i++) {
             document.getElementById(`music-tag-${i}`).pause();
         }
         document.getElementById(`music-tag-${actControls}`).play();
+        setTimeout(()=> {
+            document.getElementById('play-now').innerText = 'act13'
+        }, 500);
     }
 
     else if (actControls == 14) {
         document.getElementById('act-noti-text').innerText = 'act 14. triumph celebration'
+        setTimeout(()=> {
+            document.getElementById('act-info').innerText = 'act 14. triumph celebration'
+        }, 500)
         for (i = 1; i < 18; i++) {
             document.getElementById(`music-tag-${i}`).pause();
         }
         document.getElementById(`music-tag-${actControls}`).play();
+        setTimeout(()=> {
+            document.getElementById('play-now').innerText = 'act14'
+        }, 500);
     }
 
     else if (actControls == 15) {
         document.getElementById('act-noti-text').innerText = 'act 15. fake ending'
+        setTimeout(()=> {
+            document.getElementById('act-info').innerText = 'act 15. fake ending'
+        }, 500)
         for (i = 1; i < 18; i++) {
             document.getElementById(`music-tag-${i}`).pause();
         }
         document.getElementById(`music-tag-${actControls}`).play();
+        setTimeout(()=> {
+            document.getElementById('play-now').innerText = 'act15'
+        }, 500);
     }
 
     else if (actControls == 16) {
         TweenMax.to('#next-act', 0, { delay: .2, display: 'block' });
         TweenMax.to('#next-act', 0, { delay: .2, opacity: 1 });
         document.getElementById('act-noti-text').innerText = 'act 16. the cursed'
+        setTimeout(()=> {
+            document.getElementById('act-info').innerText = 'act 16. the cursed'
+        }, 500)
         for (i = 1; i < 18; i++) {
             document.getElementById(`music-tag-${i}`).pause();
         }
         document.getElementById(`music-tag-${actControls}`).play();
+        setTimeout(()=> {
+            document.getElementById('play-now').innerText = 'act16'
+        }, 500);
     }
 
     TweenMax.to('.act-noti', .3, { opacity: 1 });
@@ -455,19 +649,23 @@ document.getElementById('prev-act').addEventListener('click', () => {
 
 
 document.getElementById('menu').addEventListener('click', () => {
+    TweenMax.to('.blur-panel', 0, { zIndex: '2000' });
     TweenMax.to('.menu-container', 1.1, { x: '0', ease: Power4.easeInOut });
-    TweenMax.to('.container', 1.1, { x: '-30vw', ease: Power4.easeInOut });
+    TweenMax.to('.container', 1.1, { x: '-30vw', ease: Power4.easeInOut, webkitFilter: 'blur(8px)' });
     TweenMax.to('#volume-on', 1.1, { x: '-30vw', ease: Power4.easeInOut });
     TweenMax.to('#volume-off', 1.1, { x: '-30vw', ease: Power4.easeInOut });
+    TweenMax.to('#act-info', 0.6, { delay: .2, opacity: 0 });
     TweenMax.to('#circle', .2, { opacity: 0 });
     TweenMax.to('#circle', 0, { delay: .2, display: 'none' });
 });
 
 document.getElementById('close').addEventListener('click', () => {
+    TweenMax.to('.blur-panel', 0, { delay: 1.1, zIndex: '-1' });
     TweenMax.to('.menu-container', 1.1, { x: '30vw', ease: Power4.easeInOut });
-    TweenMax.to('.container', 1.1, { x: '0', ease: Power4.easeInOut });
+    TweenMax.to('.container', 1.1, { x: '0', ease: Power4.easeInOut, webkitFilter: 'blur(0px)' });
     TweenMax.to('#volume-on', 1.1, { x: '0', ease: Power4.easeInOut });
     TweenMax.to('#volume-off', 1.1, { x: '0', ease: Power4.easeInOut });
+    TweenMax.to('#act-info', 1.1, { delay: .5, opacity: 1 });
     TweenMax.to('#circle', .2, { delay: 1.1, opacity: 1 });
     TweenMax.to('#circle', 0, { display: 'block' });
 });
@@ -1119,5 +1317,13 @@ document.getElementById('img-prev-17').addEventListener('click', () => {
 })
 
 
+for (i=0; i<17; i++) {
+    document.getElementsByClassName('act-text')[i].addEventListener('mouseover', ()=> {
+        TweenMax.to('#scroll-to-read', .3, { opacity: 1});
+    })
 
+    document.getElementsByClassName('act-text')[i].addEventListener('mouseout', ()=> {
+        TweenMax.to('#scroll-to-read', .3, { opacity: 0});
+    })
+}
 
