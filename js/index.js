@@ -319,3 +319,18 @@ document.getElementById('nav-theater').addEventListener('click', ()=> {
         document.location.href = 'theater.html'
     }, 1800)
 })
+
+document.getElementById('nav-music').addEventListener('click', ()=> {
+    TweenMax.to('.menu-container', 1.1, { x: '30vw', ease: Power4.easeInOut });
+    TweenMax.to('.container', 1.1, { x: '0', ease: Power4.easeInOut });
+    TweenMax.to('#mic-canvas', .5, { delay: 1.1, opacity: 0 });
+    TweenMax.to('#mic-canvas', 0, { delay: 1.6, display: 'none' });
+    TweenMax.to('.f-container', .5, { delay: 1.1, opacity: 0 });
+    TweenMax.to('.f-container', 0, { delay: 1.6, display: 'none' });
+    TweenMax.to('.change-site', .5, { delay: 1.1, opacity: 0 });
+    TweenMax.to('.change-site', 0, { delay: 1.6, display: 'none' });
+    TweenMax.to('#menu', 0, { display: 'none' });
+    setTimeout(()=> {
+        document.location.href = 'music.html'
+    }, 1800)
+})
