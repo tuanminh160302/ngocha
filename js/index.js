@@ -241,6 +241,7 @@ document.getElementById('power').addEventListener('click', () => {
         controls.autoRotate = false;
     }, 500)
     TweenMax.to('#mic-canvas', 1.1, { delay: 0.5, x: '-100%', ease: Power4.easeIn });
+    TweenMax.to('#mic-canvas', 0, { delay: 1.6, display: 'none' });
 
     TweenMax.to('#power', 0, { display: 'none' });
     TweenMax.to('#power-2', 0, { display: 'block' });
@@ -258,6 +259,7 @@ document.getElementById('power').addEventListener('click', () => {
 
 document.getElementById('power-2').addEventListener('click', () => {
     TweenMax.to('#mic-canvas', 1.1, { delay: .2, x: '0%', ease: Power4.easeOut });
+    TweenMax.to('#mic-canvas', 0, { display: 'block' });
     setTimeout(() => {
         controls.autoRotateSpeed = 50;
         controls.autoRotate = true;

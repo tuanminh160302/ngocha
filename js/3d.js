@@ -9,8 +9,8 @@ function init() {
 
   const fov = 12;
   const aspect = window.innerWidth / window.innerHeight;
-  const near = 1;
-  const far = 50000;
+  const near = 10;
+  const far = 1000;
 
   //set up camera
   camera = new THREE.PerspectiveCamera(fov, aspect, near, far);
@@ -48,7 +48,7 @@ function init() {
 
   //Renderer
   renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
-  renderer.setSize(window.innerWidth, window.innerHeight);
+  renderer.setSize(window.innerWidth, window.innerHeight, false);
   renderer.setPixelRatio(window.devicePixelRatio);
   renderer.shadowMap.enabled = true;
 

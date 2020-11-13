@@ -54,11 +54,18 @@
     <span id="circle" class="circle circle-music"></span>
     <div class="blur-panel"></div>
 
+    <div class="video-container">
+        <iframe id="iframe" src="" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        <div id="close-vid"></div>
+    </div>
+
     <div class="container" id="container">
 
 
 
-        
+
         <div class="content-container">
 
             <div class="song-list">
@@ -73,7 +80,7 @@
                 </div>
                 <p class="or">or</p>
                 <p class="video-list">watch the video</p>
-                <img class="youtube" src="button/youtube.png" alt="">
+                <img class="youtube" id="youtube-1" src="button/youtube.png" alt="">
                 <img class="music-img" src="img/act01/1.jpg" alt="">
             </div>
 
@@ -89,7 +96,7 @@
                 </div>
                 <p class="or">or</p>
                 <p class="video-list">watch the video</p>
-                <img class="youtube" src="button/youtube.png" alt="">
+                <img class="youtube" id="youtube-2" src="button/youtube.png" alt="">
                 <img class="music-img" src="img/act02/5.jpg" alt="">
             </div>
 
@@ -105,7 +112,7 @@
                 </div>
                 <p class="or">or</p>
                 <p class="video-list">watch the video</p>
-                <img class="youtube" src="button/youtube.png" alt="">
+                <img class="youtube" id="youtube-3" src="button/youtube.png" alt="">
                 <img class="music-img" src="img/act03/6.jpg" alt="">
             </div>
 
@@ -121,7 +128,7 @@
                 </div>
                 <p class="or">or</p>
                 <p class="video-list">watch the video</p>
-                <img class="youtube" src="button/youtube.png" alt="">
+                <img class="youtube" id="youtube-4" src="button/youtube.png" alt="">
                 <img class="music-img" src="img/act09/2.jpg" alt="">
             </div>
 
@@ -137,7 +144,7 @@
                 </div>
                 <p class="or">or</p>
                 <p class="video-list">watch the video</p>
-                <img class="youtube" src="button/youtube.png" alt="">
+                <img class="youtube" id="youtube-5" src="button/youtube.png" alt="">
                 <img class="music-img" src="img/act10/7.jpg" alt="">
             </div>
 
@@ -153,10 +160,9 @@
                 </div>
                 <p class="or">or</p>
                 <p class="video-list">watch the video</p>
-                <img class="youtube" src="button/youtube.png" alt="">
+                <img class="youtube" id="youtube-6" src="button/youtube.png" alt="">
                 <img class="music-img" src="img/act12/2.jpg" alt="">
             </div>
-
 
         </div>
     </div>
@@ -172,7 +178,7 @@
         var Scrollbar = window.Scrollbar;
 
         var options = {
-            'damping': 0.04
+            'damping': 0.1
         }
         Scrollbar.init(document.querySelector('#container'), options);
     </script>

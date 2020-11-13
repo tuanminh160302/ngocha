@@ -388,7 +388,7 @@ canvas {
     font-size: 1.1em;
     position: absolute;
     cursor: default;
-    animation: neon 0.08s ease-in-out infinite alternate;
+    /* animation: neon 0.08s ease-in-out infinite alternate; */
     margin: 0;
 }
 
