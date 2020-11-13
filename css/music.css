@@ -336,73 +336,64 @@ html, body{
     transform-origin: right;
 }
 
-.listen {
-    top: 30vh;
-    color: white;
-    position: absolute;
-    left: 30vw;
-    cursor: default;
-    margin: 0;
-    font-size: 1.2em;
-    font-style: italic;
-    height: 3vh;
-    display: flex;
-    align-items: center;
-    transition: .7s;
-}
-
-.listen:hover {
-    transform: rotateY(180deg) rotateX(180deg);
-    transition: .7s;
-}
-
-.player {
+.player-img {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     height: 3vh;
-    width: 12vh;
-    top: 30vh;
+    width: 3vh;
+    top: 17vh;
     left: 45vw;
     position: absolute;
+    transition: .3s;
+    cursor: pointer;
 }
 
-.player img {
+.player-img:hover {
+    filter: invert(100%);
+    transition: .3s;
+}
+
+.pause-list {
+    display: none;
+    opacity: 0;
+}
+
+#mute {
+    z-index: 2000;
     height: 3vh;
     width: 3vh;
+    position: fixed;
+    bottom: 5vh;
+    right: 3vw;
     cursor: pointer;
-    transition: 1s;
+    display: none;
+    opacity: 0;
 }
 
-.player img:hover {
-    transform: rotate(360deg);
+#mute:hover {
     filter: invert(100%);
-    transition: 1s;
+    transition: .3s;
 }
 
-.or {
-    top: 35vh;
-    color: white;
-    position: absolute;
-    left: 30vw;
-    cursor: default;
-    margin: 0;
-    font-size: 1.2em;
-    font-style: italic;
+#unmute {
+    z-index: 2000;
     height: 3vh;
-    display: flex;
-    align-items: center;
-    transition: .5s ease-in-out;
+    width: 3vh;
+    position: fixed;
+    bottom: 5vh;
+    right: 3vw;
+    cursor: pointer;
 }
 
-.or:hover {
-    transform: rotate(90deg);
-    transition: .5s ease-in-out;
+#unmute:hover {
+    filter: invert(100%);
+    transition: .3s;
 }
 
 .video-list {
-    top: 40vh;
+    top: 25vh;
     color: white;
     position: absolute;
     left: 30vw;
@@ -413,28 +404,22 @@ html, body{
     height: 3vh;
     display: flex;
     align-items: center;
-    transition: .7s;
-}
-
-.video-list:hover {
-    transform: rotateY(180deg) rotateX(180deg);
-    transition: .7s;
 }
 
 .youtube {
-    top: 40vh;
+    top: 25vh;
     left: 45vw;
     position: absolute;
     height: 3vh;
     width: auto;
     cursor: pointer;
-    transition: 1s;
+    transition: .3s;
 }
 
 .youtube:hover {
     transform: rotate(360deg);
     filter: invert(100%);
-    transition: 1s;
+    transition: .3s;
 }
 
 .music-img {
@@ -483,10 +468,4 @@ html, body{
     background-size: cover;
     background-repeat: no-repeat;
     cursor: pointer;
-    transition: .7s;
-}
-
-#close-vid:hover {
-    transform: rotate(90deg);
-    transition: .7s;
 }
