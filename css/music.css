@@ -348,6 +348,12 @@ html, body{
     height: 3vh;
     display: flex;
     align-items: center;
+    transition: .7s;
+}
+
+.listen:hover {
+    transform: rotateY(180deg) rotateX(180deg);
+    transition: .7s;
 }
 
 .player {
@@ -387,6 +393,12 @@ html, body{
     height: 3vh;
     display: flex;
     align-items: center;
+    transition: .5s ease-in-out;
+}
+
+.or:hover {
+    transform: rotate(90deg);
+    transition: .5s ease-in-out;
 }
 
 .video-list {
@@ -401,6 +413,12 @@ html, body{
     height: 3vh;
     display: flex;
     align-items: center;
+    transition: .7s;
+}
+
+.video-list:hover {
+    transform: rotateY(180deg) rotateX(180deg);
+    transition: .7s;
 }
 
 .youtube {
