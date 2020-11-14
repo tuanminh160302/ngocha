@@ -80,6 +80,18 @@ for (i = 0; i < 6; i++) {
     })
 }
 
+document.getElementById('nav-contact').addEventListener('click', () => {
+    TweenMax.to('#nav-contact', 0, { display: 'none' });
+    TweenMax.to('#nav-contact-2', 0, { display: 'block' });
+    TweenMax.to('.nav-contact-details', .5, { opacity: 1 });
+})
+
+document.getElementById('nav-contact-2').addEventListener('click', () => {
+    TweenMax.to('#nav-contact', 0, { display: 'block' });
+    TweenMax.to('#nav-contact-2', 0, { display: 'none' });
+    TweenMax.to('.nav-contact-details', .5, { opacity: 0 });
+})
+
     document.getElementById('play-1').addEventListener('click', ()=> {
         document.getElementById('song-1').play();
         document.getElementById('song-2').pause();

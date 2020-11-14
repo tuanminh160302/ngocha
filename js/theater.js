@@ -102,7 +102,7 @@ window.onload = () => {
         })
         // TweenMax.to('.preloader', 1.1, { y: '-101vh', ease: Power4.easeInOut});
         TweenMax.to('.act2-17', 0, { display: 'none'});
-    }, 3000)
+    }, 1000)
 }
 
 var actControls = 1;
@@ -162,9 +162,9 @@ document.getElementById('next-act').addEventListener('click', () => {
     if (actControls == 2) {
         TweenMax.to('#prev-act', 0, { display: 'block' });
         TweenMax.to('#prev-act', .3, { delay: .2, opacity: 1 });
-        document.getElementById('act-noti-text').innerText = 'act 02. alice in the wonderland'
+        document.getElementById('act-noti-text').innerText = 'act 02. Alice in the Wonderland'
         setTimeout(()=> {
-            document.getElementById('act-info').innerText = 'act 02. alice in the wonderland'
+            document.getElementById('act-info').innerText = 'act 02. Alice in the Wonderland'
         }, 500)
         for (i = 1; i < 18; i++) {
             document.getElementById(`music-tag-${i}`).pause();
@@ -190,9 +190,9 @@ document.getElementById('next-act').addEventListener('click', () => {
     }
 
     else if (actControls == 4) {
-        document.getElementById('act-noti-text').innerText = 'act 04. one for roxie, one for harry'
+        document.getElementById('act-noti-text').innerText = 'act 04. one for Roxie, one for Harry'
         setTimeout(()=> {
-            document.getElementById('act-info').innerText = 'act 04. one for roxie, one for harry'
+            document.getElementById('act-info').innerText = 'act 04. one for Roxie, one for Harry'
         }, 500)
         for (i = 1; i < 18; i++) {
             document.getElementById(`music-tag-${i}`).pause();
@@ -218,9 +218,9 @@ document.getElementById('next-act').addEventListener('click', () => {
     }
 
     else if (actControls == 6) {
-        document.getElementById('act-noti-text').innerText = 'act 06. roxie is the witch!'
+        document.getElementById('act-noti-text').innerText = 'act 06. Roxie is the Witch!'
         setTimeout(()=> {
-            document.getElementById('act-info').innerText = 'act 06. roxie is the witch!'
+            document.getElementById('act-info').innerText = 'act 06. Roxie is the Witch!'
         }, 500)
         for (i = 1; i < 18; i++) {
             document.getElementById(`music-tag-${i}`).pause();
@@ -232,9 +232,9 @@ document.getElementById('next-act').addEventListener('click', () => {
     }
 
     else if (actControls == 7) {
-        document.getElementById('act-noti-text').innerText = 'act 07. give him the candy'
+        document.getElementById('act-noti-text').innerText = 'act 07. give him the Candy!'
         setTimeout(()=> {
-            document.getElementById('act-info').innerText = 'act 07. give him the candy'
+            document.getElementById('act-info').innerText = 'act 07. give him the Candy!'
         }, 500)
         for (i = 1; i < 18; i++) {
             document.getElementById(`music-tag-${i}`).pause();
@@ -246,9 +246,9 @@ document.getElementById('next-act').addEventListener('click', () => {
     }
 
     else if (actControls == 8) {
-        document.getElementById('act-noti-text').innerText = 'act 08. layla is dead'
+        document.getElementById('act-noti-text').innerText = 'act 08. Layla is dead.'
         setTimeout(()=> {
-            document.getElementById('act-info').innerText = 'act 08. layla is dead'
+            document.getElementById('act-info').innerText = 'act 08. Layla is dead.'
         }, 500)
         for (i = 1; i < 18; i++) {
             document.getElementById(`music-tag-${i}`).pause();
@@ -260,9 +260,9 @@ document.getElementById('next-act').addEventListener('click', () => {
     }
 
     else if (actControls == 9) {
-        document.getElementById('act-noti-text').innerText = 'act 09. the second wolf'
+        document.getElementById('act-noti-text').innerText = 'act 09. the second Wolf...'
         setTimeout(()=> {
-            document.getElementById('act-info').innerText = 'act 09. the second wolf'
+            document.getElementById('act-info').innerText = 'act 09. the second Wolf...'
         }, 500)
         for (i = 1; i < 18; i++) {
             document.getElementById(`music-tag-${i}`).pause();
@@ -274,9 +274,9 @@ document.getElementById('next-act').addEventListener('click', () => {
     }
 
     else if (actControls == 10) {
-        document.getElementById('act-noti-text').innerText = "act 10. bonnie'memorabilia"
+        document.getElementById('act-noti-text').innerText = "act 10. Bonnie's memorabilia"
         setTimeout(()=> {
-            document.getElementById('act-info').innerText = "act 10. bonnie'memorabilia"
+            document.getElementById('act-info').innerText = "act 10. Bonnie's memorabilia"
         }, 500)
         for (i = 1; i < 18; i++) {
             document.getElementById(`music-tag-${i}`).pause();
@@ -288,9 +288,9 @@ document.getElementById('next-act').addEventListener('click', () => {
     }
 
     else if (actControls == 11) {
-        document.getElementById('act-noti-text').innerText = 'act 11. ...is auntie may'
+        document.getElementById('act-noti-text').innerText = 'act 11. ...is auntie May.'
         setTimeout(()=> {
-            document.getElementById('act-info').innerText = 'act 11. ...is auntie may'
+            document.getElementById('act-info').innerText = 'act 11. ...is auntie May.'
         }, 500)
         for (i = 1; i < 18; i++) {
             document.getElementById(`music-tag-${i}`).pause();
@@ -316,9 +316,9 @@ document.getElementById('next-act').addEventListener('click', () => {
     }
 
     else if (actControls == 13) {
-        document.getElementById('act-noti-text').innerText = 'act 13. execution day'
+        document.getElementById('act-noti-text').innerText = 'act 13. Execution Day'
         setTimeout(()=> {
-            document.getElementById('act-info').innerText = 'act 13. execution day'
+            document.getElementById('act-info').innerText = 'act 13. Execution Day'
         }, 500)
         for (i = 1; i < 18; i++) {
             document.getElementById(`music-tag-${i}`).pause();
@@ -344,9 +344,9 @@ document.getElementById('next-act').addEventListener('click', () => {
     }
 
     else if (actControls == 15) {
-        document.getElementById('act-noti-text').innerText = 'act 15. fake ending'
+        document.getElementById('act-noti-text').innerText = 'act 15. the end'
         setTimeout(()=> {
-            document.getElementById('act-info').innerText = 'act 15. fake ending'
+            document.getElementById('act-info').innerText = 'act 15. the end... is yet to come'
         }, 500)
         for (i = 1; i < 18; i++) {
             document.getElementById(`music-tag-${i}`).pause();
@@ -358,9 +358,9 @@ document.getElementById('next-act').addEventListener('click', () => {
     }
 
     else if (actControls == 16) {
-        document.getElementById('act-noti-text').innerText = 'act 16. the cursed'
+        document.getElementById('act-noti-text').innerText = 'act 16. the cursed Wolf'
         setTimeout(()=> {
-            document.getElementById('act-info').innerText = 'act 16. the cursed'
+            document.getElementById('act-info').innerText = 'act 16. the cursed Wolf'
         }, 500)
         for (i = 1; i < 18; i++) {
             document.getElementById(`music-tag-${i}`).pause();
@@ -374,9 +374,9 @@ document.getElementById('next-act').addEventListener('click', () => {
     else if (actControls == 17) {
         TweenMax.to('#next-act', 0, { delay: .2, display: 'none' });
         TweenMax.to('#next-act', 0, { delay: .2, opacity: 0 });
-        document.getElementById('act-noti-text').innerText = 'act 17. outro: the last wolf'
+        document.getElementById('act-noti-text').innerText = 'act 17. at last'
         setTimeout(()=> {
-            document.getElementById('act-info').innerText = 'act 17. outro: the last wolf'
+            document.getElementById('act-info').innerText = 'act 17. at last'
         }, 500)
         for (i = 1; i < 18; i++) {
             document.getElementById(`music-tag-${i}`).pause();
@@ -407,9 +407,9 @@ document.getElementById('prev-act').addEventListener('click', () => {
     if (actControls == 1) {
         TweenMax.to('#prev-act', 0, { delay: .2, display: 'none' });
         TweenMax.to('#prev-act', 0, { delay: .2, opacity: 0 });
-        document.getElementById('act-noti-text').innerText = "act 01. intro: protector's death"
+        document.getElementById('act-noti-text').innerText = "act 01. Protector's death"
         setTimeout(()=> {
-            document.getElementById('act-info').innerText = "act 01. intro: protector's death"
+            document.getElementById('act-info').innerText = "act 01. Protector's death"
         }, 500)
         for (i = 1; i < 18; i++) {
             document.getElementById(`music-tag-${i}`).pause();
@@ -421,9 +421,9 @@ document.getElementById('prev-act').addEventListener('click', () => {
     }
 
     if (actControls == 2) {
-        document.getElementById('act-noti-text').innerText = 'act 02. alice in the wonderland'
+        document.getElementById('act-noti-text').innerText = 'act 02. Alice in the Wonderland'
         setTimeout(()=> {
-            document.getElementById('act-info').innerText = 'act 02. alice in the wonderland'
+            document.getElementById('act-info').innerText = 'act 02. Alice in the Wonderland'
         }, 500)
         for (i = 1; i < 18; i++) {
             document.getElementById(`music-tag-${i}`).pause();
@@ -449,9 +449,9 @@ document.getElementById('prev-act').addEventListener('click', () => {
     }
 
     else if (actControls == 4) {
-        document.getElementById('act-noti-text').innerText = 'act 04. one for roxie, one for harry'
+        document.getElementById('act-noti-text').innerText = 'act 04. one for Roxie, one for Harry'
         setTimeout(()=> {
-            document.getElementById('act-info').innerText = 'act 04. one for roxie, one for harry'
+            document.getElementById('act-info').innerText = 'act 04. one for Roxie, one for Harry'
         }, 500)
         for (i = 1; i < 18; i++) {
             document.getElementById(`music-tag-${i}`).pause();
@@ -477,9 +477,9 @@ document.getElementById('prev-act').addEventListener('click', () => {
     }
 
     else if (actControls == 6) {
-        document.getElementById('act-noti-text').innerText = 'act 06. roxie is the witch!'
+        document.getElementById('act-noti-text').innerText = 'act 06. Roxie is the Witch!'
         setTimeout(()=> {
-            document.getElementById('act-info').innerText = 'act 06. roxie is the witch!'
+            document.getElementById('act-info').innerText = 'act 06. Roxie is the Witch!'
         }, 500)
         for (i = 1; i < 18; i++) {
             document.getElementById(`music-tag-${i}`).pause();
@@ -491,9 +491,9 @@ document.getElementById('prev-act').addEventListener('click', () => {
     }
 
     else if (actControls == 7) {
-        document.getElementById('act-noti-text').innerText = 'act 07. give him the candy'
+        document.getElementById('act-noti-text').innerText = 'act 07. give him the Candy!'
         setTimeout(()=> {
-            document.getElementById('act-info').innerText = 'act 07. give him the candy'
+            document.getElementById('act-info').innerText = 'act 07. give him the Candy!'
         }, 500)
         for (i = 1; i < 18; i++) {
             document.getElementById(`music-tag-${i}`).pause();
@@ -505,9 +505,9 @@ document.getElementById('prev-act').addEventListener('click', () => {
     }
 
     else if (actControls == 8) {
-        document.getElementById('act-noti-text').innerText = 'act 08. layla is dead'
+        document.getElementById('act-noti-text').innerText = 'act 08. Layla is dead.'
         setTimeout(()=> {
-            document.getElementById('act-info').innerText = 'act 08. layla is dead'
+            document.getElementById('act-info').innerText = 'act 08. Layla is dead.'
         }, 500)
         for (i = 1; i < 18; i++) {
             document.getElementById(`music-tag-${i}`).pause();
@@ -519,9 +519,9 @@ document.getElementById('prev-act').addEventListener('click', () => {
     }
 
     else if (actControls == 9) {
-        document.getElementById('act-noti-text').innerText = 'act 09. the second wolf'
+        document.getElementById('act-noti-text').innerText = 'act 09. the second Wolf...'
         setTimeout(()=> {
-            document.getElementById('act-info').innerText = 'act 09. the second wolf'
+            document.getElementById('act-info').innerText = 'act 09. the second Wolf...'
         }, 500)
         for (i = 1; i < 18; i++) {
             document.getElementById(`music-tag-${i}`).pause();
@@ -533,9 +533,9 @@ document.getElementById('prev-act').addEventListener('click', () => {
     }
 
     else if (actControls == 10) {
-        document.getElementById('act-noti-text').innerText = "act 10. bonnie'memorabilia"
+        document.getElementById('act-noti-text').innerText = "act 10. Bonnie's memorabilia"
         setTimeout(()=> {
-            document.getElementById('act-info').innerText = "act 10. bonnie'memorabilia"
+            document.getElementById('act-info').innerText = "act 10. Bonnie's memorabilia"
         }, 500)
         for (i = 1; i < 18; i++) {
             document.getElementById(`music-tag-${i}`).pause();
@@ -547,9 +547,9 @@ document.getElementById('prev-act').addEventListener('click', () => {
     }
 
     else if (actControls == 11) {
-        document.getElementById('act-noti-text').innerText = 'act 11. ...is auntie may'
+        document.getElementById('act-noti-text').innerText = 'act 11. ...is auntie May.'
         setTimeout(()=> {
-            document.getElementById('act-info').innerText = 'act 11. ...is auntie may'
+            document.getElementById('act-info').innerText = 'act 11. ...is auntie May.'
         }, 500)
         for (i = 1; i < 18; i++) {
             document.getElementById(`music-tag-${i}`).pause();
@@ -575,9 +575,9 @@ document.getElementById('prev-act').addEventListener('click', () => {
     }
 
     else if (actControls == 13) {
-        document.getElementById('act-noti-text').innerText = 'act 13. execution day'
+        document.getElementById('act-noti-text').innerText = 'act 13. Execution Day'
         setTimeout(()=> {
-            document.getElementById('act-info').innerText = 'act 13. execution day'
+            document.getElementById('act-info').innerText = 'act 13. Execution Day'
         }, 500)
         for (i = 1; i < 18; i++) {
             document.getElementById(`music-tag-${i}`).pause();
@@ -603,9 +603,9 @@ document.getElementById('prev-act').addEventListener('click', () => {
     }
 
     else if (actControls == 15) {
-        document.getElementById('act-noti-text').innerText = 'act 15. fake ending'
+        document.getElementById('act-noti-text').innerText = 'act 15. the end'
         setTimeout(()=> {
-            document.getElementById('act-info').innerText = 'act 15. fake ending'
+            document.getElementById('act-info').innerText = 'act 15. the end... is yet to come'
         }, 500)
         for (i = 1; i < 18; i++) {
             document.getElementById(`music-tag-${i}`).pause();
@@ -619,9 +619,9 @@ document.getElementById('prev-act').addEventListener('click', () => {
     else if (actControls == 16) {
         TweenMax.to('#next-act', 0, { delay: .2, display: 'block' });
         TweenMax.to('#next-act', 0, { delay: .2, opacity: 1 });
-        document.getElementById('act-noti-text').innerText = 'act 16. the cursed'
+        document.getElementById('act-noti-text').innerText = 'act 16. the cursed Wolf'
         setTimeout(()=> {
-            document.getElementById('act-info').innerText = 'act 16. the cursed'
+            document.getElementById('act-info').innerText = 'act 16. the cursed Wolf'
         }, 500)
         for (i = 1; i < 18; i++) {
             document.getElementById(`music-tag-${i}`).pause();
