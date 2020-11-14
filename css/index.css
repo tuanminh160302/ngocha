@@ -65,6 +65,7 @@ html, body{
     top: 4vh;
     z-index: 1000;
     animation: neon 0.08s ease-in-out infinite alternate;
+    font-family: 'raleway' !important;
 }
 
 #menu {
@@ -103,6 +104,7 @@ html, body{
     position: absolute;
     left: 4vw;
     margin: 0;
+    font-family: 'raleway' !important;
 }
 
 #title {
