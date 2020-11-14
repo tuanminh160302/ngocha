@@ -341,27 +341,9 @@ canvas {
     opacity: 0;
 }
 
-#audio-next {
-    background-image: url(/button/audio-next.png);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    bottom: 4vh;
-    left: 9vw;
-}
-
-#audio-prev {
-    background-image: url(/button/audio-prev.png);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    bottom: 4vh;
-    left: 6vw;
-}
-
 #playing {
     bottom: 4vh;
-    left: 15vw;
+    left: 7vw;
     color: white;
     position: absolute;
     z-index: 1000;
@@ -371,7 +353,7 @@ canvas {
 
 #play-now {
     bottom: 4vh;
-    left: 20vw;
+    left: 12vw;
     color: white;
     font-style: italic;
     position: absolute;

@@ -38,13 +38,11 @@ window.onload = () => {
 
             setTimeout(() => {
                 document.getElementById('music-tag').play();
-                document.getElementById('music-tag-2').pause();
-                document.getElementById('music-tag-3').pause();
             }, 1400)
 
             TweenMax.to('#pause', 0, { display: 'block', opacity: 1 });
             TweenMax.to('#play', 0, { display: 'none', opacity: 0 });
-            document.getElementById('play-now').innerText = 'Friends on the other side'
+            document.getElementById('play-now').innerText = 'Run - claudea x ngocha x vuongne'
         })
 
         document.getElementById('deny-music').addEventListener('click', () => {
@@ -78,132 +76,16 @@ window.onload = () => {
 
             TweenMax.to('#play', 0, { display: 'block', opacity: 1 });
             TweenMax.to('#pause', 0, { display: 'none', opacity: 0 });
-            document.getElementById('play-now').innerText = 'Friends on the other side'
+            document.getElementById('play-now').innerText = 'Run - claudea x ngocha x vuongne'
         })
 
         // TweenMax.to('.preloader', 1.1, { y: '-101vh', ease: Power4.easeInOut});
     }, 1000)
 }
 
-
-var nextCount = 1;
-document.getElementById('audio-next').addEventListener('click', () => {
-    TweenMax.to('#play', .3, { opacity: 0 });
-    TweenMax.to('#play', 0, { delay: .3, display: 'none' });
-    TweenMax.to('#pause', 0, { delay: .3, display: 'block' });
-    TweenMax.to('#pause', .3, { delay: .3, opacity: 1 });
-    document.getElementById('music-tag').currentTime = 0;
-    document.getElementById('music-tag-2').currentTime = 0;
-    document.getElementById('music-tag-3').currentTime = 0;
-    nextCount += 1;
-    if (nextCount == 1) {
-        TweenMax.to('#play-now', 0.3, { opacity: 0});
-        setTimeout(()=> {
-            document.getElementById('play-now').innerText = 'Friends on the other side'
-        }, 300);
-        TweenMax.to('#play-now', 0.3, { delay: 0.3, opacity: 1});
-        document.getElementById('music-tag').play();
-        document.getElementById('music-tag-2').pause();
-        document.getElementById('music-tag-3').pause();
-    } else if (nextCount == 2) {
-        TweenMax.to('#play-now', 0.3, { opacity: 0});
-        setTimeout(()=> {
-            document.getElementById('play-now').innerText = 'All that jazz'
-        }, 300);
-        TweenMax.to('#play-now', 0.3, { delay: 0.3, opacity: 1});
-        document.getElementById('music-tag').pause();
-        document.getElementById('music-tag-2').play();
-        document.getElementById('music-tag-3').pause();
-    } else if (nextCount == 3) {
-        TweenMax.to('#play-now', 0.3, { opacity: 0});
-        setTimeout(()=> {
-            document.getElementById('play-now').innerText = 'Santa Fe'
-        }, 300);
-        TweenMax.to('#play-now', 0.3, { delay: 0.3, opacity: 1});
-        document.getElementById('music-tag').pause();
-        document.getElementById('music-tag-2').pause();
-        document.getElementById('music-tag-3').play();
-    } else if (nextCount > 3) {
-        nextCount = 1;
-        TweenMax.to('#play-now', 0.3, { opacity: 0});
-        setTimeout(()=> {
-            document.getElementById('play-now').innerText = 'Friends on the other side'
-        }, 300);
-        TweenMax.to('#play-now', 0.3, { delay: 0.3, opacity: 1});
-        document.getElementById('music-tag').play();
-        document.getElementById('music-tag-2').pause();
-        document.getElementById('music-tag-3').pause();
-    }
-    console.log(nextCount);
-})
-
-document.getElementById('audio-prev').addEventListener('click', () => {
-    TweenMax.to('#play', .3, { opacity: 0 });
-    TweenMax.to('#play', 0, { delay: .3, display: 'none' });
-    TweenMax.to('#pause', 0, { delay: .3, display: 'block' });
-    TweenMax.to('#pause', .3, { delay: .3, opacity: 1 });
-    document.getElementById('music-tag').currentTime = 0;
-    document.getElementById('music-tag-2').currentTime = 0;
-    document.getElementById('music-tag-3').currentTime = 0;
-    nextCount -= 1;
-    if (nextCount == 1) {
-        TweenMax.to('#play-now', 0.3, { opacity: 0});
-        setTimeout(()=> {
-            document.getElementById('play-now').innerText = 'Friends on the other side'
-        }, 300);
-        TweenMax.to('#play-now', 0.3, { delay: 0.3, opacity: 1});
-        document.getElementById('music-tag').play();
-        document.getElementById('music-tag-2').pause();
-        document.getElementById('music-tag-3').pause();
-    } else if (nextCount == 2) {
-        TweenMax.to('#play-now', 0.3, { opacity: 0});
-        setTimeout(()=> {
-            document.getElementById('play-now').innerText = 'All that jazz'
-        }, 300);
-        TweenMax.to('#play-now', 0.3, { delay: 0.3, opacity: 1});
-        document.getElementById('music-tag').pause();
-        document.getElementById('music-tag-2').play();
-        document.getElementById('music-tag-3').pause();
-    } else if (nextCount == 3) {
-        TweenMax.to('#play-now', 0.3, { opacity: 0});
-        setTimeout(()=> {
-            document.getElementById('play-now').innerText = 'Santa Fe'
-        }, 300);
-        TweenMax.to('#play-now', 0.3, { delay: 0.3, opacity: 1});
-        document.getElementById('music-tag').pause();
-        document.getElementById('music-tag-2').pause();
-        document.getElementById('music-tag-3').play();
-    } else if (nextCount < 1) {
-        nextCount = 3;
-        TweenMax.to('#play-now', 0.3, { opacity: 0});
-        setTimeout(()=> {
-            document.getElementById('play-now').innerText = 'Santa Fe'
-        }, 300);
-        TweenMax.to('#play-now', 0.3, { delay: 0.3, opacity: 1});
-        document.getElementById('music-tag').play();
-        document.getElementById('music-tag-2').pause();
-        document.getElementById('music-tag-3').pause();
-    }
-    console.log(nextCount);
-})
-
-
 document.getElementById('play').addEventListener('click', () => {
 
-    if (nextCount == 1) {
-        document.getElementById('music-tag').play();
-        document.getElementById('music-tag-2').pause();
-        document.getElementById('music-tag-3').pause();
-    } else if (nextCount == 2) {
-        document.getElementById('music-tag').pause();
-        document.getElementById('music-tag-2').play();
-        document.getElementById('music-tag-3').pause();
-    } else if (nextCount == 3) {
-        document.getElementById('music-tag').pause();
-        document.getElementById('music-tag-2').pause();
-        document.getElementById('music-tag-3').play();
-    } 
-
+    document.getElementById('music-tag').play();
     TweenMax.to('#play', .3, { opacity: 0 });
     TweenMax.to('#play', 0, { delay: .3, display: 'none' });
     TweenMax.to('#pause', 0, { delay: .3, display: 'block' });
@@ -212,8 +94,6 @@ document.getElementById('play').addEventListener('click', () => {
 
 document.getElementById('pause').addEventListener('click', () => {
     document.getElementById('music-tag').pause();
-    document.getElementById('music-tag-2').pause();
-    document.getElementById('music-tag-3').pause();
     TweenMax.to('#pause', .3, { opacity: 0 });
     TweenMax.to('#pause', 0, { delay: .3, display: 'none' });
     TweenMax.to('#play', 0, { delay: .3, display: 'block' });

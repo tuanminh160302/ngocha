@@ -35,13 +35,13 @@
 }
 
 #glams-preloader {
-    color: white;
-    font-size: 2em;
     opacity: 0;
     display: none;
-    margin: 0;
     top: 50vh;
     position: absolute;
+    width: 25vw;
+    height: auto;
+    transform: translateY(-50%);
 }
 
 #glams-description {
