@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-on">
 
 <head>
     <meta charset="UTF-8">
@@ -11,19 +11,39 @@
     <link rel="stylesheet" href="css/index.css">
 </head>
 
-<body>
+<body class="scroll-on">
     <div class="preloader" id="preloader">
         <img id="gif" src="/preloader/loading.gif" alt="">
         <p id="p-loading">loading theater</p>
         <p id="p-media-control">Theater always comes with music. So let me play you some gorgeous songs</p>
-        <p id="glams-preloader">g'lams 2020: the midday moon</p>
-        <p id="glams-description">g'lams is a Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit natus commodi ea laudantium,
-            corrupti incidunt repellat? Non illum, omnis perspiciatis facere aliquam fugit perferendis deleniti hic
-            deserunt reprehenderit amet laudantium.</p>
+        <div class="glams-container" id="glams-container">
+            <p id="glams-preloader">g'lams 2020: midday moon</p>
+            <img id="glams-cover" src="img/glams/cover.jpg" alt="">
+            <p id="glams-description">G’LAMS is a musical performed by the Hamlet of Art for high school students in Hanoi, Vietnam. 
+                With a burning passion for theatrical arts and orchestral music, we - the producing team - strive to bring a novel, exhilarating, and humanistic experience to Vietnamese audiences.
+                <br><br>
+                This year, both the general director and music director of G’LAMS are me.
+                <br>
+                ><
+                </p>
+            <div class="cards-container">
+                <img class="cards" src="img/glams/cards/alice.png" alt="">
+                <img class="cards" src="img/glams/cards/roxie.png" alt="">
+                <img class="cards" src="img/glams/cards/gotham.png" alt="">
+                <img class="cards" src="img/glams/cards/harry.png" alt="">
+                <img class="cards" src="img/glams/ava.png" alt="">
+                <img class="cards" src="img/glams/cards/richman.png" alt="">
+                <img class="cards" src="img/glams/cards/bonnie.png" alt="">
+                <img class="cards" src="img/glams/cards/layla.png" alt="">
+                <img class="cards" src="img/glams/cards/may.png" alt="">
+            </div>
+            
+            <div id="understand"></div>
+            <img id="glams-dinner" src="img/glams/dinner.png" alt="">
+        </div>
     </div>
     <div class="music-rights" id="allow-music"></div>
     <div class="music-rights" id="deny-music"></div>
-    <div id="understand"></div>
 
     <div id="menu"></div>
     <div class="menu-container">
@@ -100,7 +120,8 @@
                 <div class="img-prev" id="img-prev-1"></div>
             </div>
             <div class="act-container-text">
-                <p id="act-text" class="act-text">Once upon a time, in a faraway place that no ordinary man could reach, an old
+                <p id="act-text-1" class="act-text">Once upon a time, in a faraway place that no ordinary man could reach,
+                    an old
                     village existed under rules of Werewolf Board-game. Each person there, other than being
                     their-original-selves, was destined to play a role in the game.
                     <br><br>
@@ -124,16 +145,36 @@
                 <div class="img-prev" id="img-prev-2"></div>
             </div>
             <div class="act-container-text">
-                <p class="act-text">Once upon a time, in a faraway place that no ordinary man could reach, an old
-                    village existed under rules of Werewolf Board-game. Each person there, other than being
-                    their-original-selves, was destined to play a role in the game.
+                <p id="act-text-2" class="act-text">WONDERLAND was a bar, and its bartender was Alice – Harry’s best friend.
                     <br><br>
-                    Harry, the beautiful, jobless protagonist, woke up from a coma, losing half of his memories.
-                    Walking out the square after one month, hearing the villagers fussing about “moon” “month” “wolf”
-                    “death”, Harry didn’t get a thing.
+                    Alice helped Harry recall his memories of the Werewolf rules:
                     <br><br>
-                    On his way back home, a strange door showed up with the sign WONDERLAND. A hunch urged Harry to walk
-                    through that door.</p>
+                    01. It happens once a month, when the moon is full. The next noon is the execution hours.
+                    <br><br>
+                    02. The wolves kill one person each full-moon night, two at blood-moon night.
+                    <br><br>
+                    03. There are eight characters left who can decide the outcome, and two wolves hiding in between:
+                    <br><br>
+                    Gotham – the mayor
+                    <br>
+                    May – the healer
+                    <br>
+                    Richman – the landlord
+                    <br>
+                    Roxie – the candy dealer
+                    <br>
+                    Layla – the weaver
+                    <br>
+                    Bonnie – the shepherdess
+                    <br>
+                    Alice – the bartender
+                    <br>
+                    Harry – the unemployed
+                    <br><br>
+                    04. No one can escape. The only way out is to kill all the wolves before they eat us all.
+                    <br><br>
+                    05. Harry’s role, in case he forgot it as well, was the Normal Villager – totally useless!</p>
+
             </div>
         </div>
 
@@ -149,16 +190,18 @@
                 <div class="img-prev" id="img-prev-3"></div>
             </div>
             <div class="act-container-text">
-                <p class="act-text">Once upon a time, in a faraway place that no ordinary man could reach, an old
-                    village existed under rules of Werewolf Board-game. Each person there, other than being
-                    their-original-selves, was destined to play a role in the game.
+                <p id="act-text-3" class="act-text">Leaving Wonderland, Harry encountered Roxie, who was insisting on a compensation
+                    from Bonnie, who just bumped into Roxie’s candy basket. He defended Bonnie, and accordingly, created
+                    a grudge with Roxie.
                     <br><br>
-                    Harry, the beautiful, jobless protagonist, woke up from a coma, losing half of his memories.
-                    Walking out the square after one month, hearing the villagers fussing about “moon” “month” “wolf”
-                    “death”, Harry didn’t get a thing.
+                    They met auntie May on a rush to pick the wormwood – the leaves believed to heal wolf-bites. Harry,
+                    regarding May as his savior, volunteered to help.
                     <br><br>
-                    On his way back home, a strange door showed up with the sign WONDERLAND. A hunch urged Harry to walk
-                    through that door.</p>
+                    Meanwhile, the villagers and Layla were gossiping about Richman, who the whole village conceded as
+                    one of the two wolves, though no one was brave enough to denounce him.
+                    <br><br>
+                    And they were exposed – by Richman.
+                </p>
             </div>
         </div>
 
@@ -171,16 +214,17 @@
                 <div class="img-prev" id="img-prev-4"></div>
             </div>
             <div class="act-container-text">
-                <p class="act-text">Once upon a time, in a faraway place that no ordinary man could reach, an old
-                    village existed under rules of Werewolf Board-game. Each person there, other than being
-                    their-original-selves, was destined to play a role in the game.
+                <p id="act-text-4" class="act-text">Richman became frightened after mishearing that conversation.
                     <br><br>
-                    Harry, the beautiful, jobless protagonist, woke up from a coma, losing half of his memories.
-                    Walking out the square after one month, hearing the villagers fussing about “moon” “month” “wolf”
-                    “death”, Harry didn’t get a thing.
+                    He had to come up with a plan – an early move to help him win the game sooner.
+                    <br>
+                    “The Witch – poison – liquid – wine – Alice in Wonderland!”
                     <br><br>
-                    On his way back home, a strange door showed up with the sign WONDERLAND. A hunch urged Harry to walk
-                    through that door.</p>
+                    With that outstanding deduction, Richman rushed back to the bar and compelled Alice to use up her
+                    killing and healing potions on Roxie and Harry with his tempting reasons.
+                    <br><br>
+                    The deal settled, in seconds. The moon was full that night.
+                </p>
             </div>
         </div>
 
@@ -194,16 +238,16 @@
                 <div class="img-prev" id="img-prev-5"></div>
             </div>
             <div class="act-container-text">
-                <p class="act-text">Once upon a time, in a faraway place that no ordinary man could reach, an old
-                    village existed under rules of Werewolf Board-game. Each person there, other than being
-                    their-original-selves, was destined to play a role in the game.
+                <p id="act-text-5" class="act-text">The next day, surprisingly, both Harry and Roxie were still alive. But the strange
+                    thing is that they bumped into each other so many times at the square.
+                    <br>
+                    And everyone else around them talked about love.
                     <br><br>
-                    Harry, the beautiful, jobless protagonist, woke up from a coma, losing half of his memories.
-                    Walking out the square after one month, hearing the villagers fussing about “moon” “month” “wolf”
-                    “death”, Harry didn’t get a thing.
+                    Alice was the Cupid.
                     <br><br>
-                    On his way back home, a strange door showed up with the sign WONDERLAND. A hunch urged Harry to walk
-                    through that door.</p>
+                    And the linked Couple cannot be more than 10 feet apart if they haven’t revealed their roles for
+                    each other.
+                </p>
             </div>
         </div>
 
@@ -219,16 +263,20 @@
                 <div class="img-prev" id="img-prev-6"></div>
             </div>
             <div class="act-container-text">
-                <p class="act-text">Once upon a time, in a faraway place that no ordinary man could reach, an old
-                    village existed under rules of Werewolf Board-game. Each person there, other than being
-                    their-original-selves, was destined to play a role in the game.
+                <p id="act-text-6" class="act-text">Roxie blew up and ran away. Harry ran, of course, after her.
                     <br><br>
-                    Harry, the beautiful, jobless protagonist, woke up from a coma, losing half of his memories.
-                    Walking out the square after one month, hearing the villagers fussing about “moon” “month” “wolf”
-                    “death”, Harry didn’t get a thing.
+                    The reluctant “lovebirds” continued their argument on the boat that took Roxie to her home in the
+                    middle of a river.
                     <br><br>
-                    On his way back home, a strange door showed up with the sign WONDERLAND. A hunch urged Harry to walk
-                    through that door.</p>
+                    Harry even tried to threaten Roxie by throwing her oar away, but the boat weirdly moved itself to a
+                    cavern, where the magic happened.
+                    <br><br>
+                    Roxie was the real Witch, and she despised the villagers because of their selfishness.
+                    <br><br>
+                    Harry was too stunned to utter a word until the boat landed.
+                    <br><br>
+                    But he managed to persuade Roxie to side up with him in the end.
+                </p>
             </div>
         </div>
 
@@ -243,17 +291,13 @@
                 <div class="img-next" id="img-next-7"></div>
                 <div class="img-prev" id="img-prev-7"></div>
             </div>
-            <div class="act-container-text">
-                <p class="act-text">Once upon a time, in a faraway place that no ordinary man could reach, an old
-                    village existed under rules of Werewolf Board-game. Each person there, other than being
-                    their-original-selves, was destined to play a role in the game.
+            <div id="act-text-8" class="act-container-text">
+                <p class="act-text">One month after, in the full-moon night, Richman was murdered by Roxie’s toxic
+                    candy.
                     <br><br>
-                    Harry, the beautiful, jobless protagonist, woke up from a coma, losing half of his memories.
-                    Walking out the square after one month, hearing the villagers fussing about “moon” “month” “wolf”
-                    “death”, Harry didn’t get a thing.
+                    At least, it was not an awful death.
                     <br><br>
-                    On his way back home, a strange door showed up with the sign WONDERLAND. A hunch urged Harry to walk
-                    through that door.</p>
+                    “One wolf left to win!”</p>
             </div>
         </div>
 
@@ -264,16 +308,10 @@
                 <div class="img-prev" id="img-prev-8"></div>
             </div>
             <div class="act-container-text">
-                <p class="act-text">Once upon a time, in a faraway place that no ordinary man could reach, an old
-                    village existed under rules of Werewolf Board-game. Each person there, other than being
-                    their-original-selves, was destined to play a role in the game.
+                <p class="act-text">The next morning, Layla was found dead at the square.
                     <br><br>
-                    Harry, the beautiful, jobless protagonist, woke up from a coma, losing half of his memories.
-                    Walking out the square after one month, hearing the villagers fussing about “moon” “month” “wolf”
-                    “death”, Harry didn’t get a thing.
-                    <br><br>
-                    On his way back home, a strange door showed up with the sign WONDERLAND. A hunch urged Harry to walk
-                    through that door.</p>
+                    The execution hours reached nowhere, because no one has clear proof.
+                </p>
             </div>
         </div>
 
@@ -288,16 +326,18 @@
                 <div class="img-prev" id="img-prev-9"></div>
             </div>
             <div class="act-container-text">
-                <p class="act-text">Once upon a time, in a faraway place that no ordinary man could reach, an old
-                    village existed under rules of Werewolf Board-game. Each person there, other than being
-                    their-original-selves, was destined to play a role in the game.
+                <p id="act-text-9" class="act-text">Another month passed, in the full-moon night, the Couple tried to connect the
+                    evidence they gathered to find out the second wolf – one out of three suspects: Bonnie, Gotham, May.
                     <br><br>
-                    Harry, the beautiful, jobless protagonist, woke up from a coma, losing half of his memories.
-                    Walking out the square after one month, hearing the villagers fussing about “moon” “month” “wolf”
-                    “death”, Harry didn’t get a thing.
+                    After a while, Harry recalled what he witnessed the night Richman died in Wonderland: Layla and
+                    Bonnie were there, and Bonnie was trying to find a dubious thing in Richman’s body.
                     <br><br>
-                    On his way back home, a strange door showed up with the sign WONDERLAND. A hunch urged Harry to walk
-                    through that door.</p>
+                    What a proof!
+                    <br><br>
+                    The Couple jumped to a conclusion: the shepherdess is a wolf.
+                    <br><br>
+                    Suddenly, Alice arrived: “Bonnie was attacked by the wolf... But auntie May timely saved her.”
+                </p>
             </div>
         </div>
 
@@ -314,16 +354,22 @@
                 <div class="img-prev" id="img-prev-10"></div>
             </div>
             <div class="act-container-text">
-                <p class="act-text">Once upon a time, in a faraway place that no ordinary man could reach, an old
-                    village existed under rules of Werewolf Board-game. Each person there, other than being
-                    their-original-selves, was destined to play a role in the game.
+                <p id="act-text-10" class="act-text">All the traces messed up. Harry decided to go to Bonnie’s place for more explicit
+                    clues from her.
                     <br><br>
-                    Harry, the beautiful, jobless protagonist, woke up from a coma, losing half of his memories.
-                    Walking out the square after one month, hearing the villagers fussing about “moon” “month” “wolf”
-                    “death”, Harry didn’t get a thing.
+                    3 A.M. Bonnie noticed Harry coming from distance, her face blushed then brightened.
+                    <br>
+                    She confessed to him, about her memorabilia locked at Richman’s when he was living, about how she
+                    was healed, and about her special admiration for Harry.
+                    <br>
+                    In the story, an unprecedented name popped up: ‘Forest Wolf leaf’ – clearly written on a potion in
+                    May’s house.
                     <br><br>
-                    On his way back home, a strange door showed up with the sign WONDERLAND. A hunch urged Harry to walk
-                    through that door.</p>
+                    Out of nowhere, there was Gotham sitting on the veranda, smoking a pipe, and watching the young.
+                    <br>
+                    Then, the old man handed Harry a book named “1001 exclusive herbs for Wolves.” Afterwards, Harry
+                    might have realized the answer he was chasing.
+                </p>
             </div>
         </div>
 
@@ -336,17 +382,9 @@
                 <div class="img-next" id="img-next-11"></div>
                 <div class="img-prev" id="img-prev-11"></div>
             </div>
-            <div class="act-container-text">
-                <p class="act-text">Once upon a time, in a faraway place that no ordinary man could reach, an old
-                    village existed under rules of Werewolf Board-game. Each person there, other than being
-                    their-original-selves, was destined to play a role in the game.
-                    <br><br>
-                    Harry, the beautiful, jobless protagonist, woke up from a coma, losing half of his memories.
-                    Walking out the square after one month, hearing the villagers fussing about “moon” “month” “wolf”
-                    “death”, Harry didn’t get a thing.
-                    <br><br>
-                    On his way back home, a strange door showed up with the sign WONDERLAND. A hunch urged Harry to walk
-                    through that door.</p>
+            <div id="act-text-11" class="act-container-text">
+                <p class="act-text">“There should be a little sacrifice for a greater great.”
+                </p>
             </div>
         </div>
 
@@ -362,16 +400,17 @@
                 <div class="img-prev" id="img-prev-12"></div>
             </div>
             <div class="act-container-text">
-                <p class="act-text">Once upon a time, in a faraway place that no ordinary man could reach, an old
-                    village existed under rules of Werewolf Board-game. Each person there, other than being
-                    their-original-selves, was destined to play a role in the game.
+                <p id="act-text-12" class="act-text">The Trio sneaked into May’s house to find the ‘Forest Wolf leaf’ potion.
+                    <br>
+                    It was there – everything was clear.
+                    <br>
+                    The execution was coming, they had to go.
                     <br><br>
-                    Harry, the beautiful, jobless protagonist, woke up from a coma, losing half of his memories.
-                    Walking out the square after one month, hearing the villagers fussing about “moon” “month” “wolf”
-                    “death”, Harry didn’t get a thing.
-                    <br><br>
-                    On his way back home, a strange door showed up with the sign WONDERLAND. A hunch urged Harry to walk
-                    through that door.</p>
+                    Harry didn’t readily accept the truth, for May was his savior.
+                    <br>
+                    Nonetheless, he was a justice advocate, so he had to make up his mind and follow his forever
+                    righteousness.
+                </p>
             </div>
         </div>
 
@@ -387,16 +426,14 @@
                 <div class="img-prev" id="img-prev-13"></div>
             </div>
             <div class="act-container-text">
-                <p class="act-text">Once upon a time, in a faraway place that no ordinary man could reach, an old
-                    village existed under rules of Werewolf Board-game. Each person there, other than being
-                    their-original-selves, was destined to play a role in the game.
+                <p id="act-text-13" class="act-text">Execution hours got tense.
                     <br><br>
-                    Harry, the beautiful, jobless protagonist, woke up from a coma, losing half of his memories.
-                    Walking out the square after one month, hearing the villagers fussing about “moon” “month” “wolf”
-                    “death”, Harry didn’t get a thing.
+                    Roxie, Harry, and Alice took their turns to denounce May’s guilt.
                     <br><br>
-                    On his way back home, a strange door showed up with the sign WONDERLAND. A hunch urged Harry to walk
-                    through that door.</p>
+                    After 90 seconds for self-defense, May received a black sea of thumbs-down from the villagers.
+                    <br><br>
+                    “Harry, I never wanted to save you. It should be the endgame now.” May died on the hanging truss.
+                </p>
             </div>
         </div>
 
@@ -411,16 +448,11 @@
                 <div class="img-prev" id="img-prev-14"></div>
             </div>
             <div class="act-container-text">
-                <p class="act-text">Once upon a time, in a faraway place that no ordinary man could reach, an old
-                    village existed under rules of Werewolf Board-game. Each person there, other than being
-                    their-original-selves, was destined to play a role in the game.
+                <p id="act-text-14" class="act-text">“The Villagers won! LET’S CELEBRATE!”
                     <br><br>
-                    Harry, the beautiful, jobless protagonist, woke up from a coma, losing half of his memories.
-                    Walking out the square after one month, hearing the villagers fussing about “moon” “month” “wolf”
-                    “death”, Harry didn’t get a thing.
-                    <br><br>
-                    On his way back home, a strange door showed up with the sign WONDERLAND. A hunch urged Harry to walk
-                    through that door.</p>
+                    Through the ups and downs, it seemed Alice’s love potions finally came into effect and made the
+                    Couple truly fall in love.
+                </p>
             </div>
         </div>
 
@@ -433,16 +465,18 @@
                 <div class="img-prev" id="img-prev-15"></div>
             </div>
             <div class="act-container-text">
-                <p class="act-text">Once upon a time, in a faraway place that no ordinary man could reach, an old
-                    village existed under rules of Werewolf Board-game. Each person there, other than being
-                    their-original-selves, was destined to play a role in the game.
+                <p id="act-text-15" class="act-text">“Our story has come to an end now. Wish you all a happy full-moon season!”
                     <br><br>
-                    Harry, the beautiful, jobless protagonist, woke up from a coma, losing half of his memories.
-                    Walking out the square after one month, hearing the villagers fussing about “moon” “month” “wolf”
-                    “death”, Harry didn’t get a thing.
+                    That night, the blood moon rose.
                     <br><br>
-                    On his way back home, a strange door showed up with the sign WONDERLAND. A hunch urged Harry to walk
-                    through that door.</p>
+                    Bonnie ran to Harry’s house in tears and informed the Couple: Alice was attacked by a wolf.
+                    <br><br>
+                    THERE. WAS. A. WOLF. LEFT.
+                    <br><br>
+                    Roxie immediately took out the healing candy and Harry brought it to save Alice.
+                    <br><br>
+                    “It is not Gotham...” Alice cried out her breathy words.
+                </p>
             </div>
         </div>
 
@@ -464,16 +498,37 @@
                 <div class="img-prev" id="img-prev-16"></div>
             </div>
             <div class="act-container-text">
-                <p class="act-text">Once upon a time, in a faraway place that no ordinary man could reach, an old
-                    village existed under rules of Werewolf Board-game. Each person there, other than being
-                    their-original-selves, was destined to play a role in the game.
+                <p id="act-text-16" class="act-text">It was Bonnie.
+                    <br>
+                    When Harry rushed back, Bonnie welcomed him. A knife in her right hand, a rope tying Roxie in her
+                    left hand.
+                    <br>
+                    Bonnie was the Cursed Wolf – May put the curse on her.
                     <br><br>
-                    Harry, the beautiful, jobless protagonist, woke up from a coma, losing half of his memories.
-                    Walking out the square after one month, hearing the villagers fussing about “moon” “month” “wolf”
-                    “death”, Harry didn’t get a thing.
+                    At that moment, Bonnie exposed every secret that all the villagers – including Roxie and Alice – had
+                    been hiding from Harry.
+                    <br>
+                    That Harry was the Prince, who had double lives, who was destined to bring peace to the Village, and
+                    who was hung on the noose once by the villagers he always trusted. Therefore, May was never his
+                    savior: his role saved him.
+                    <br>
+                    That Harry and Bonnie were lovers, which he completely forgot after the coma. And Bonnie’s half-moon
+                    necklace was Harry’s gift.
+                    <br>
+                    That Bonnie never gave a fuck about the wolves’ plan, for all she wanted was Harry’s love.
                     <br><br>
-                    On his way back home, a strange door showed up with the sign WONDERLAND. A hunch urged Harry to walk
-                    through that door.</p>
+                    But Harry resisted, though his heart was heavily wounded by his most sacred ideal.
+                    <br>
+                    Bonnie was about to kill Roxie when Alice arrived to save her friends: “They are linked by the
+                    Cupid. If Roxie dies, so does Harry.”
+                    <br><br>
+                    Bonnie stopped, bursting out her most painful laugh: “Turns out it was all a play you damned people
+                    created. And I am the only one who was betrayed.”
+                    <br>
+                    “All too well! Please bask in your triumph, your despicable triumph.”
+                    <br>
+                    Bonnie turned around, and killed Alice, a second time.
+                </p>
             </div>
         </div>
 
@@ -487,16 +542,20 @@
                 <div class="img-prev" id="img-prev-17"></div>
             </div>
             <div class="act-container-text">
-                <p class="act-text">Once upon a time, in a faraway place that no ordinary man could reach, an old
-                    village existed under rules of Werewolf Board-game. Each person there, other than being
-                    their-original-selves, was destined to play a role in the game.
+                <p id="act-text-17" class="act-text">Execution hours. Harry, Roxie, Gotham, and Bonnie on the hanging truss.
                     <br><br>
-                    Harry, the beautiful, jobless protagonist, woke up from a coma, losing half of his memories.
-                    Walking out the square after one month, hearing the villagers fussing about “moon” “month” “wolf”
-                    “death”, Harry didn’t get a thing.
+                    Two thumb-downs from the Couple.
+                    <br>
+                    One thumb-up from Bonnie.
+                    <br>
+                    One thumb-up from Gotham.
                     <br><br>
-                    On his way back home, a strange door showed up with the sign WONDERLAND. A hunch urged Harry to walk
-                    through that door.</p>
+                    Richman was the Betrayer, and Gotham was the last last Wolf.
+                    <br>
+                    The Couple fell down. The Wolves won.
+                    <br><br>
+                    End.
+                </p>
             </div>
         </div>
 

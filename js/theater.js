@@ -13,6 +13,7 @@ window.onload = () => {
 
         document.getElementById('understand').addEventListener('click',()=> {
             TweenMax.to('.container', 0, { delay: 3, webkitFilter: 'blur(0px)'});
+            TweenMax.to('#circle', 0, { delay: 3, zIndex: '1000000'});
             TweenMax.to('#circle', 0, { delay: 3, zIndex: '50'});
             TweenMax.to('.preloader', 1.1, { y: '-101vh', ease: Power4.easeInOut });
             TweenMax.to('.act-noti', .3, { delay: 2.7, opacity: 0 });
@@ -24,6 +25,8 @@ window.onload = () => {
         })
 
         document.getElementById('allow-music').addEventListener('click', () => {
+            TweenMax.to('#circle', 0, { zIndex: '50'});
+
             TweenMax.to('#volume-off', 0, { display: 'none', opacity: 0});
             TweenMax.to('#volume-on', 0, { display: 'block', opacity: 1});
 
@@ -32,11 +35,17 @@ window.onload = () => {
             TweenMax.to('.music-rights', 0.4, { opacity: 0 });
             TweenMax.to('#p-media-control', 0.4, { opacity: 0 })
 
+            TweenMax.to('.glams-container', 0, { display: 'flex'});
+            setTimeout(()=> {
+                document.getElementById('preloader').style.overflowY = 'auto';
+            }, 6500)
+            
             TweenMax.to('#glams-preloader', .0, { delay: .5, display: 'block' });
             TweenMax.to('#glams-preloader', 2, { delay: 1, opacity: 1 });
-            TweenMax.to('#glams-preloader', .7, { delay: 3.3, y: '-30vh', ease: Power4.easeInOut});
+            TweenMax.to('#glams-preloader', .7, { delay: 3.3, y: '-40vh', ease: Power4.easeInOut});
             TweenMax.to('#glams-description', 0, { delay: 4.5, display: 'block'});
             TweenMax.to('#glams-description', .5, { delay: 4.5, opacity: 1});
+            TweenMax.to('#glams-cover', 2, { delay: 4.5, opacity: 1});
             TweenMax.to('#understand', 0, { delay: 6, display: 'block'});
             TweenMax.to('#understand', .5, { delay: 6, opacity: 1});
 
@@ -52,6 +61,8 @@ window.onload = () => {
         })
 
         document.getElementById('deny-music').addEventListener('click', () => {
+            TweenMax.to('#circle', 0, { zIndex: '50'});
+
             for (i = 1; i < 18; i++) {
                 document.getElementById(`music-tag-${i}`).pause();
             }
@@ -72,11 +83,17 @@ window.onload = () => {
             TweenMax.to('.music-rights', 0.4, { opacity: 0 });
             TweenMax.to('#p-media-control', 0.4, { opacity: 0 })
 
+            TweenMax.to('.glams-container', 0, { display: 'flex'});
+            setTimeout(()=> {
+                document.getElementById('preloader').style.overflowY = 'auto';
+            }, 6500)
+
             TweenMax.to('#glams-preloader', .0, { delay: .5, display: 'block' });
             TweenMax.to('#glams-preloader', 2, { delay: 1, opacity: 1 });
-            TweenMax.to('#glams-preloader', .7, { delay: 3.3, y: '-30vh', ease: Power4.easeInOut});
+            TweenMax.to('#glams-preloader', .7, { delay: 3.3, y: '-40vh', ease: Power4.easeInOut});
             TweenMax.to('#glams-description', 0, { delay: 4.5, display: 'block'});
             TweenMax.to('#glams-description', .5, { delay: 4.5, opacity: 1});
+            TweenMax.to('#glams-cover', 2, { delay: 4.5, opacity: 1});
             TweenMax.to('#understand', 0, { delay: 6, display: 'block'});
             TweenMax.to('#understand', .5, { delay: 6, opacity: 1});
 

@@ -1,9 +1,11 @@
 html, body {
     height: 100vh;
     width: 100vw;
-    overflow: hidden;
+    overflow-y: hidden;
+    overflow-x: hidden;
     margin: 0;
     padding: 0;
+    font-family: 'roboto'!important;
 }
 
 .circle {
@@ -106,7 +108,7 @@ html, body {
     width: 65%;
     color: white;
     font-size: 1em;
-    line-height: 70px;
+    line-height: 40px;
     margin: 0;
     position: absolute;
     top: 10vh;
@@ -164,8 +166,8 @@ html, body {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    top: calc(40vh - 1.5vh);
-    right: 1vw;
+    top: 73vh;
+    right: 45%;
     z-index: 1000;
 }
 
@@ -178,8 +180,8 @@ html, body {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    top: calc(40vh - 1.5vh);
-    left: 1vw;
+    top: 73vh;
+    left: 45%;
     z-index: 1000;
     opacity: 1;
     display: none;
@@ -197,7 +199,7 @@ html, body {
 
 #play-now {
     bottom: 4vh;
-    left: 12vw !important;
+    left: 15vw !important;
     color: white;
     font-style: italic;
     position: absolute;
@@ -226,4 +228,12 @@ html, body {
     right: 3vw;
     display: none;
     opacity: 0;
+}
+
+.scrollbar-track {
+    display: none !important;
+}
+
+.scrollbar-thumb {
+    display: none !important;
 }

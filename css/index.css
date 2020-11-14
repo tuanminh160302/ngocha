@@ -8,6 +8,11 @@
     src: url('/fonts/Raleway-VariableFont_wght.ttf') format('truetype');
 }
 
+@font-face {
+    font-family: 'roboto';
+    src: url('/fonts//Roboto_Mono/RobotoMono-VariableFont_wght.ttf') format('truetype');
+}
+
 html, body{
     height: 100vh;
     width: 100vw;
