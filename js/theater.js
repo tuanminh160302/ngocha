@@ -18,7 +18,7 @@ window.onload = () => {
             TweenMax.to('.preloader', 1.1, { y: '-101vh', ease: Power4.easeInOut });
             TweenMax.to('.act-noti', .3, { delay: 2.7, opacity: 0 });
             TweenMax.to('.act-noti', 0, { delay: 3, display: 'none' });
-            document.getElementById('play-now').innerText = 'Friends on the other side'
+            document.getElementById('play-now').innerText = 'Bac Lam Vuon x That Bat Ngo'
             TweenMax.to('#understand', 0, { delay: .5, display: 'none'});
             TweenMax.to('#understand', .5, { opacity: 0});
             TweenMax.to('.preloader', 0, { delay: 1.1, display: 'none'});
@@ -171,7 +171,7 @@ document.getElementById('next-act').addEventListener('click', () => {
         }
         document.getElementById(`music-tag-${actControls}`).play();
         setTimeout(()=> {
-            document.getElementById('play-now').innerText = 'act2'
+            document.getElementById('play-now').innerText = 'Arabian Nights'
         }, 500);
     }
 
@@ -185,7 +185,7 @@ document.getElementById('next-act').addEventListener('click', () => {
         }
         document.getElementById(`music-tag-${actControls}`).play();
         setTimeout(()=> {
-            document.getElementById('play-now').innerText = 'act3'
+            document.getElementById('play-now').innerText = 'Background Music'
         }, 500);
     }
 
@@ -199,7 +199,7 @@ document.getElementById('next-act').addEventListener('click', () => {
         }
         document.getElementById(`music-tag-${actControls}`).play();
         setTimeout(()=> {
-            document.getElementById('play-now').innerText = 'act4'
+            document.getElementById('play-now').innerText = 'Poor Unfortunate Souls'
         }, 500);
     }
 
@@ -213,7 +213,7 @@ document.getElementById('next-act').addEventListener('click', () => {
         }
         document.getElementById(`music-tag-${actControls}`).play();
         setTimeout(()=> {
-            document.getElementById('play-now').innerText = 'act5'
+            document.getElementById('play-now').innerText = 'When He Sees Me'
         }, 500);
     }
 
@@ -227,7 +227,7 @@ document.getElementById('next-act').addEventListener('click', () => {
         }
         document.getElementById(`music-tag-${actControls}`).play();
         setTimeout(()=> {
-            document.getElementById('play-now').innerText = 'act6'
+            document.getElementById('play-now').innerText = 'Be Italian'
         }, 500);
     }
 
@@ -241,7 +241,7 @@ document.getElementById('next-act').addEventListener('click', () => {
         }
         document.getElementById(`music-tag-${actControls}`).play();
         setTimeout(()=> {
-            document.getElementById('play-now').innerText = 'act7'
+            document.getElementById('play-now').innerText = "Joke's On You"
         }, 500);
     }
 
@@ -255,7 +255,7 @@ document.getElementById('next-act').addEventListener('click', () => {
         }
         document.getElementById(`music-tag-${actControls}`).play();
         setTimeout(()=> {
-            document.getElementById('play-now').innerText = 'act8'
+            document.getElementById('play-now').innerText = 'Background Music'
         }, 500);
     }
 
@@ -269,7 +269,7 @@ document.getElementById('next-act').addEventListener('click', () => {
         }
         document.getElementById(`music-tag-${actControls}`).play();
         setTimeout(()=> {
-            document.getElementById('play-now').innerText = 'act9'
+            document.getElementById('play-now').innerText = 'Background Music'
         }, 500);
     }
 
@@ -283,7 +283,7 @@ document.getElementById('next-act').addEventListener('click', () => {
         }
         document.getElementById(`music-tag-${actControls}`).play();
         setTimeout(()=> {
-            document.getElementById('play-now').innerText = 'act10'
+            document.getElementById('play-now').innerText = "How 'Bout A Dance"
         }, 500);
     }
 
@@ -297,7 +297,7 @@ document.getElementById('next-act').addEventListener('click', () => {
         }
         document.getElementById(`music-tag-${actControls}`).play();
         setTimeout(()=> {
-            document.getElementById('play-now').innerText = 'act11'
+            document.getElementById('play-now').innerText = 'The Hearse Song'
         }, 500);
     }
 
@@ -311,7 +311,7 @@ document.getElementById('next-act').addEventListener('click', () => {
         }
         document.getElementById(`music-tag-${actControls}`).play();
         setTimeout(()=> {
-            document.getElementById('play-now').innerText = 'act12'
+            document.getElementById('play-now').innerText = 'Anyone'
         }, 500);
     }
 
@@ -325,7 +325,7 @@ document.getElementById('next-act').addEventListener('click', () => {
         }
         document.getElementById(`music-tag-${actControls}`).play();
         setTimeout(()=> {
-            document.getElementById('play-now').innerText = 'act13'
+            document.getElementById('play-now').innerText = 'Genius'
         }, 500);
     }
 
@@ -339,7 +339,7 @@ document.getElementById('next-act').addEventListener('click', () => {
         }
         document.getElementById(`music-tag-${actControls}`).play();
         setTimeout(()=> {
-            document.getElementById('play-now').innerText = 'act14'
+            document.getElementById('play-now').innerText = "I've Got a Dream"
         }, 500);
     }
 
@@ -353,7 +353,7 @@ document.getElementById('next-act').addEventListener('click', () => {
         }
         document.getElementById(`music-tag-${actControls}`).play();
         setTimeout(()=> {
-            document.getElementById('play-now').innerText = 'act15'
+            document.getElementById('play-now').innerText = 'Background Music'
         }, 500);
     }
 
@@ -367,7 +367,7 @@ document.getElementById('next-act').addEventListener('click', () => {
         }
         document.getElementById(`music-tag-${actControls}`).play();
         setTimeout(()=> {
-            document.getElementById('play-now').innerText = 'act16'
+            document.getElementById('play-now').innerText = "How 'Bout A Dance (Reprise)"
         }, 500);
     }
 
@@ -383,7 +383,7 @@ document.getElementById('next-act').addEventListener('click', () => {
         }
         document.getElementById(`music-tag-${actControls}`).play();
         setTimeout(()=> {
-            document.getElementById('play-now').innerText = 'act17'
+            document.getElementById('play-now').innerText = 'Bac Lam Vuon x That Bat Ngo (reprise)'
         }, 500);
     }
 })
@@ -1028,10 +1028,10 @@ document.getElementById('img-next-10').addEventListener('click', () => {
     setTimeout(() => {
         document.getElementById('act-10-img').src = `/img/act10/${act10}.jpg`;
     }, 300)
-    if (act10 > 7) {
+    if (act10 > 6) {
         TweenMax.to('#img-next-10', .3, { opacity: 0 });
         TweenMax.to('#img-next-10', 0, { delay: .3, display: 'none' });
-    } else if (act10 == 7) {
+    } else if (act10 == 6) {
         TweenMax.to('#img-next-10', .3, { opacity: 0 });
         TweenMax.to('#img-next-10', 0, { delay: .3, display: 'none' });
     }
@@ -1102,10 +1102,10 @@ document.getElementById('img-next-12').addEventListener('click', () => {
     setTimeout(() => {
         document.getElementById('act-12-img').src = `/img/act12/${act12}.jpg`;
     }, 300)
-    if (act12 > 6) {
+    if (act12 > 7) {
         TweenMax.to('#img-next-12', .3, { opacity: 0 });
         TweenMax.to('#img-next-12', 0, { delay: .3, display: 'none' });
-    } else if (act12 == 6) {
+    } else if (act12 == 7) {
         TweenMax.to('#img-next-12', .3, { opacity: 0 });
         TweenMax.to('#img-next-12', 0, { delay: .3, display: 'none' });
     }
