@@ -12,6 +12,6 @@ jQuery(document).ready(function () {
         xp += ((mouseX - xp) / 6);
         yp += ((mouseY - yp) / 6);
         $("#circle").css({ left: xp + 'px', top: yp + 'px' });
-    }, 20);
+    }, 10);
 
 });

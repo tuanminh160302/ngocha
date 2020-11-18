@@ -40,6 +40,7 @@ html, body{
     width: 60px;
     border-radius: 50%;  
     background: transparent;
+    backdrop-filter: grayscale(1) sepia(100%) blur(1.5px) brightness(1.4);
 }
 
 .circle-home { 
@@ -66,6 +67,7 @@ html, body{
     z-index: 1000;
     animation: neon 0.08s ease-in-out infinite alternate;
     font-family: 'raleway' !important;
+    cursor: default;
 }
 
 #menu {
@@ -114,6 +116,7 @@ html, body{
     border: 1.4px solid black;
     padding: 10px;
     font-style: italic;
+    cursor: pointer;
 }
 
 #nav-music {
@@ -300,6 +303,13 @@ html, body{
     z-index: 1000;
 }
 
+.container-index {
+    background-image: url(/gif/neon.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 
 
 canvas {
@@ -308,7 +318,6 @@ canvas {
     width: 100vw !important;
     background: black;
     z-index: 200;
-    transform: translateX(-100%);
 }
 
 .media-control {
@@ -372,47 +381,59 @@ canvas {
 }
 
 .f-container-text {
-    color: white;
+    color: black;
     z-index: 100;
     font-size: 1.1em;
     position: absolute;
     cursor: default;
-    /* animation: neon 0.08s ease-in-out infinite alternate; */
     margin: 0;
+    padding: 10px;
 }
 
 #hi {
     top: 30vh;
     left: 60vw;
+    font-weight: bold;
+    background-color: white;
 }
 
 #intro-1 {
     top: 38vh;
     left: 60vw;
+    font-weight: bold;
+    background-color: white;
 }
 
 #intro-2 {
     top: 46vh;
     left: 60vw;
+    font-weight: bold;
+    background-color: white;
 }
 
 #intro-3 {
     top: 54vh;
     left: 60vw;
+    font-weight: bold;
+    background-color: white;
 }
 
 #intro-4 {
     top: 62vh;
     left: 60vw;
-}
+    font-weight: bold;
+    background-color: white;
+}   
 
 #neon-1 {
     z-index: 40;
     height: 40vh;
-    width: 40vh;
+    width: auto;
     position: absolute;
     top: 20vh;
     right: 10vw;
+    filter: blur(4px);
+    display: none;
 }
 
 #soundwave {
@@ -427,7 +448,7 @@ canvas {
 #ngocha-gif {
     z-index: 40;
     height: 45vh;
-    width: 45vh;
+    width: auto;
     position: absolute;
     top: 50vh;
     left: calc(50vw - 60vh);

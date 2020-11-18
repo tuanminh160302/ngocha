@@ -1,4 +1,5 @@
 window.onload = () => {
+    TweenMax.to('.container', 0, { webkitFilter: 'blur(0px)' });
     setTimeout(() => {
         TweenMax.to('#gif', 0.4, { opacity: 0 });
         TweenMax.to('#p-loading', 0.4, { opacity: 0 });
@@ -26,17 +27,6 @@ window.onload = () => {
             TweenMax.to('#p-media-control', 0, { delay: 1.1, opacity: 0 });
 
             setTimeout(() => {
-                TweenMax.to('#mic-canvas', 1.1, { x: '0%', ease: Power4.easeOut });
-            }, 1200)
-            setTimeout(() => {
-                controls.autoRotateSpeed = 50;
-                controls.autoRotate = true;
-                setTimeout(function () {
-                    controls.autoRotate = false;
-                }, 500)
-            }, 1200)
-
-            setTimeout(() => {
                 document.getElementById('music-tag').play();
             }, 1400)
 
@@ -58,17 +48,6 @@ window.onload = () => {
             TweenMax.to('#p-media-control', 0, { delay: 1.1, display: 'none' });
             TweenMax.to('.music-rights', 0, { delay: 1.1, opacity: 0 });
             TweenMax.to('#p-media-control', 0, { delay: 1.1, opacity: 0 });
-
-            setTimeout(() => {
-                TweenMax.to('#mic-canvas', 1.1, { x: '0%', ease: Power4.easeOut });
-            }, 1200)
-            setTimeout(() => {
-                controls.autoRotateSpeed = 50;
-                controls.autoRotate = true;
-                setTimeout(function () {
-                    controls.autoRotate = false;
-                }, 500)
-            }, 1200)
 
             setTimeout(() => {
                 document.getElementById('music-tag').pause();
@@ -102,14 +81,14 @@ document.getElementById('pause').addEventListener('click', () => {
 
 document.getElementById('menu').addEventListener('click', () => {
     TweenMax.to('.menu-container', 1.1, { x: '0', ease: Power4.easeInOut });
-    TweenMax.to('.container', 1.1, { x: '-30vw', ease: Power4.easeInOut});
+    TweenMax.to('.container', 1.1, { x: '-30vw', ease: Power4.easeInOut, webkitFilter: 'blur(8px)' });
     TweenMax.to('#circle', .2, { opacity: 0 });
     TweenMax.to('#circle', 0, { delay: .2, display: 'none' });
 });
 
 document.getElementById('close').addEventListener('click', () => {
     TweenMax.to('.menu-container', 1.1, { x: '30vw', ease: Power4.easeInOut });
-    TweenMax.to('.container', 1.1, { x: '0', ease: Power4.easeInOut });
+    TweenMax.to('.container', 1.1, { x: '0', ease: Power4.easeInOut, webkitFilter: 'blur(0px)' });
     TweenMax.to('#circle', .2, { delay: 1.1, opacity: 1 });
     TweenMax.to('#circle', 0, { display: 'block' });
 });

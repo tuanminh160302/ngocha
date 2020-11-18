@@ -37,6 +37,11 @@ document.getElementById('understand-music').addEventListener('click', ()=> {
 })
 
 document.getElementById('menu').addEventListener('click', () => {
+    TweenMax.to('.name-list', .5, { color: 'white'});
+    TweenMax.to('.video-list', .5, { delay: .3, color: 'white'});
+    TweenMax.to('.event-description', .5, { delay: .3, color: 'white'});
+    TweenMax.to('.gah', .5, { delay: .3, color: 'white'});
+
     TweenMax.to('.blur-panel', 0, { zIndex: '2000' });
     TweenMax.to('.blur-panel', 1.1, { x: '-30vw', ease: Power4.easeInOut });
     TweenMax.to('.menu-container', 1.1, { x: '0', ease: Power4.easeInOut });
@@ -51,6 +56,11 @@ document.getElementById('menu').addEventListener('click', () => {
 });
 
 document.getElementById('close').addEventListener('click', () => {
+    TweenMax.to('.name-list', .5, { color: 'black'});
+    TweenMax.to('.video-list', .5, { delay: .5, color: 'black'});
+    TweenMax.to('.event-description', .5, { delay: .5, color: 'black'});
+    TweenMax.to('.gah', .5, { delay: .5, color: 'black'});
+
     TweenMax.to('.blur-panel', 0, { delay: 1.1, zIndex: '-1' });
     TweenMax.to('.blur-panel', 1.1, { x: '0', ease: Power4.easeInOut });
     TweenMax.to('.menu-container', 1.1, { x: '30vw', ease: Power4.easeInOut });
@@ -82,7 +92,7 @@ document.getElementById('unmute').addEventListener('mouseout', () => {
 
 for (i = 0; i < 20; i++) {
     document.getElementsByClassName('player-img')[i].addEventListener('mouseover', () => {
-        TweenMax.to('#circle', .3, { backgroundColor: 'white' });
+        TweenMax.to('#circle', .3, { backgroundColor: 'black' });
     })
 
     document.getElementsByClassName('player-img')[i].addEventListener('mouseout', () => {
@@ -92,7 +102,7 @@ for (i = 0; i < 20; i++) {
 
 for (i = 0; i < 5; i++) {
     document.getElementsByClassName('youtube')[i].addEventListener('mouseover', () => {
-        TweenMax.to('#circle', .3, { backgroundColor: 'white' });
+        TweenMax.to('#circle', .3, { backgroundColor: 'black' });
     })
 
     document.getElementsByClassName('youtube')[i].addEventListener('mouseout', () => {
@@ -1030,4 +1040,30 @@ document.getElementById('youtube-5').addEventListener('click', () => {
     }, 750);
     TweenMax.to('.video-container', 0, { display: 'flex' });
     TweenMax.to('.video-container', .7, { ease: Power4.easeOut, y: 0 })
+})
+
+document.getElementById('title').addEventListener('click', ()=> {
+    TweenMax.to('.menu-container', 1.1, { x: '30vw', ease: Power4.easeInOut });
+    TweenMax.to('.container', 1.1, { x: '0', ease: Power4.easeInOut });
+    TweenMax.to('.change-site', .5, { delay: 1.1, opacity: 0 });
+    TweenMax.to('.change-site', 0, { delay: 1.6, display: 'none' });
+    TweenMax.to('.container', .5, { delay: 1.1, opacity: 0 });
+    TweenMax.to('.container', 0, { delay: 1.6, display: 'none' });
+    TweenMax.to('#menu', 0, { display: 'none' });
+    setTimeout(()=> {
+        document.location.href = 'index.html'
+    }, 1800)
+})
+
+document.getElementById('nav-theater').addEventListener('click', ()=> {
+    TweenMax.to('.menu-container', 1.1, { x: '30vw', ease: Power4.easeInOut });
+    TweenMax.to('.container', 1.1, { x: '0', ease: Power4.easeInOut });
+    TweenMax.to('.change-site', .5, { delay: 1.1, opacity: 0 });
+    TweenMax.to('.change-site', 0, { delay: 1.6, display: 'none' });
+    TweenMax.to('.container', .5, { delay: 1.1, opacity: 0 });
+    TweenMax.to('.container', 0, { delay: 1.6, display: 'none' });
+    TweenMax.to('#menu', 0, { display: 'none' });
+    setTimeout(()=> {
+        document.location.href = 'theater.html'
+    }, 1800)
 })
