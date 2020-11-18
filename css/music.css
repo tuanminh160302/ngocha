@@ -439,8 +439,6 @@ html, body{
     position: absolute;
     right: 20vw;
     top: 15vh;
-    filter: grayscale(1) blur(2px);
-    transition: .9s;
 }
 
 #glee-at-home {
@@ -457,11 +455,6 @@ html, body{
     position: absolute;
     right: 10vw;
     top: 15vh;
-}
-
-.music-img:hover {
-    filter: grayscale(0) blur(0px);
-    transition: .9s;
 }
 
 .video-container {
