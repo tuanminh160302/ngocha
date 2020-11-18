@@ -28,6 +28,7 @@ html, body {
     font-size: 1em;
     z-index: 1000;
     cursor: pointer;
+    margin: .5vh 0 0 0;
 }
 
 #next-act {
@@ -171,6 +172,10 @@ html, body {
     z-index: 1000;
 }
 
+.img-next:hover {
+    filter: invert(100%);
+}
+
 .img-prev {
     height: 3vh;
     width: 3vh;
@@ -185,6 +190,10 @@ html, body {
     z-index: 1000;
     opacity: 1;
     display: none;
+}
+
+.img-prev:hover {
+    filter: invert(100%);
 }
 
 #playing {
@@ -236,4 +245,56 @@ html, body {
 
 .scrollbar-thumb {
     display: none !important;
+}
+
+.video-container {
+    z-index: 10000000;
+    background: rgba(0, 0, 0, .9);
+    height: 110vh;
+    width: 100vw;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    transform: translateY(-100vh);
+    display: none;
+}
+
+.video-container iframe {
+    height: 54vh !important;
+    width: 96vh !important;
+}
+
+#close-vid {
+    height: 5vh;
+    width: 5vh;
+    position: absolute;
+    bottom: 5vw;
+    left: calc(50% - 1.5vh);
+    background-image: url(/button/close-vid.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.youtube {
+    top: 4vh;
+    left: 50vw;
+    transform: translateX(-50%);
+    position: absolute;
+    height: 3vh;
+    width: auto;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.youtube:hover {
+    filter: invert(100%);
+}
+
+.rotate-on-hover:hover {
+    filter: invert(100%);
 }

@@ -44,6 +44,20 @@
     transform: translateY(-50%);
 }
 
+#glams-name {
+    position: absolute;
+    color: white;
+    font-size: 1.2em;
+    /* opacity: 0;
+    display: none; */
+    margin: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 20vh;
+    cursor: pointer;
+    z-index: 10000;
+}
+
 #glams-description {
     position: absolute;
     color: white;

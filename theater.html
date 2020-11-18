@@ -18,6 +18,7 @@
         <p id="p-media-control">Theater always comes with music. So let me play you some gorgeous songs!</p>
         <div class="glams-container" id="glams-container">
             <img src="img/glams/ava.png" id="glams-preloader"></img>
+            <p id="glams-name">Midday Moon</p>
             <img id="glams-cover" src="img/glams/cover.jpg" alt="">
             <p id="glams-description">G’LAMS is a musical performed by the Hamlet of Art for high school students in Hanoi, Vietnam. 
                 With a burning passion for theatrical arts and orchestral music, we - the producing team - strive to bring a novel, exhilarating, and humanistic experience to Vietnamese audiences.
@@ -63,6 +64,13 @@
         </a>
     </div>
 
+    <div class="video-container">
+        <iframe id="iframe" src="https://www.youtube.com/embed/79y0_TDVBgM" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        <div id="close-vid"></div>
+    </div>
+
 
 
 
@@ -86,10 +94,10 @@
     <audio id="music-tag-17" loop="loop" src="music/17.mp3" type="audio/mpeg"></audio>
 
 
-    <div class="media-control" id="play"></div>
-    <div class="media-control" id="pause"></div>
-    <div class="media-control" id="volume-on"></div>
-    <div class="media-control" id="volume-off"></div>
+    <div class="media-control rotate-on-hover" id="play"></div>
+    <div class="media-control rotate-on-hover" id="pause"></div>
+    <div class="media-control rotate-on-hover" id="volume-on"></div>
+    <div class="media-control rotate-on-hover" id="volume-off"></div>
     <p id="playing">Playing</p>
     <p id="play-now"></p>
 
@@ -101,6 +109,7 @@
         <div class="blur-panel"></div>
 
         <p class="act-controls" id="next-act">next act</p>
+        <img src="button/youtube.png" class="youtube rotate-on-hover" id="youtube-1">
         <p class="act-controls" id="prev-act">previous act</p>
         <span id="circle" class="circle circle-theater"></span>
         <nav class="header"><a id="logo" href="#">ngoc ha</a></nav>

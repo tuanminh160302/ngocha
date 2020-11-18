@@ -145,6 +145,7 @@ document.getElementById('pause').addEventListener('click', () => {
 
 
 document.getElementById('next-act').addEventListener('click', () => {
+    document.getElementById('iframe').src = ''
     TweenMax.to('#circle', 0, { zIndex: '100000'});
     TweenMax.to('#circle', 0, { delay: 2.7, zIndex: '50'});
     TweenMax.to(`#act-${actControls}-container`, 0, { delay: .3, display: 'none'});
@@ -160,6 +161,7 @@ document.getElementById('next-act').addEventListener('click', () => {
     document.getElementById(`music-tag-${actControls}`).currentTime = 0;
 
     if (actControls == 2) {
+        document.getElementById('iframe').src = 'https://www.youtube.com/embed/dTiWs67gcAs'
         TweenMax.to('#prev-act', 0, { display: 'block' });
         TweenMax.to('#prev-act', .3, { delay: .2, opacity: 1 });
         document.getElementById('act-noti-text').innerText = 'act 02. Alice in the Wonderland'
@@ -176,6 +178,7 @@ document.getElementById('next-act').addEventListener('click', () => {
     }
 
     else if (actControls == 3) {
+        document.getElementById('iframe').src = ''
         document.getElementById('act-noti-text').innerText = 'act 03. quarrels and rumors'
         setTimeout(()=> {
             document.getElementById('act-info').innerText = 'act 03. quarrels and rumors'
@@ -190,6 +193,7 @@ document.getElementById('next-act').addEventListener('click', () => {
     }
 
     else if (actControls == 4) {
+        document.getElementById('iframe').src = 'https://www.youtube.com/embed/sFX8VJe-9A4'
         document.getElementById('act-noti-text').innerText = 'act 04. one for Roxie, one for Harry'
         setTimeout(()=> {
             document.getElementById('act-info').innerText = 'act 04. one for Roxie, one for Harry'
@@ -204,6 +208,7 @@ document.getElementById('next-act').addEventListener('click', () => {
     }
 
     else if (actControls == 5) {
+        document.getElementById('iframe').src = 'https://www.youtube.com/embed/XRHMPw8JQ2s'
         document.getElementById('act-noti-text').innerText = 'act 05. love is both life and death'
         setTimeout(()=> {
             document.getElementById('act-info').innerText = 'act 05. love is both life and death'
@@ -218,6 +223,7 @@ document.getElementById('next-act').addEventListener('click', () => {
     }
 
     else if (actControls == 6) {
+        document.getElementById('iframe').src = 'https://www.youtube.com/embed/YXFHzRdpp9M'
         document.getElementById('act-noti-text').innerText = 'act 06. Roxie is the Witch!'
         setTimeout(()=> {
             document.getElementById('act-info').innerText = 'act 06. Roxie is the Witch!'
@@ -232,6 +238,7 @@ document.getElementById('next-act').addEventListener('click', () => {
     }
 
     else if (actControls == 7) {
+        document.getElementById('iframe').src = 'https://www.youtube.com/embed/nH84QqF-L7s'
         document.getElementById('act-noti-text').innerText = 'act 07. give him the Candy!'
         setTimeout(()=> {
             document.getElementById('act-info').innerText = 'act 07. give him the Candy!'
@@ -246,6 +253,7 @@ document.getElementById('next-act').addEventListener('click', () => {
     }
 
     else if (actControls == 8) {
+        document.getElementById('iframe').src = ''
         document.getElementById('act-noti-text').innerText = 'act 08. Layla is dead.'
         setTimeout(()=> {
             document.getElementById('act-info').innerText = 'act 08. Layla is dead.'
@@ -260,6 +268,7 @@ document.getElementById('next-act').addEventListener('click', () => {
     }
 
     else if (actControls == 9) {
+        document.getElementById('iframe').src = ''
         document.getElementById('act-noti-text').innerText = 'act 09. the second Wolf...'
         setTimeout(()=> {
             document.getElementById('act-info').innerText = 'act 09. the second Wolf...'
@@ -274,6 +283,7 @@ document.getElementById('next-act').addEventListener('click', () => {
     }
 
     else if (actControls == 10) {
+        document.getElementById('iframe').src = 'https://www.youtube.com/embed/wqB_DWYpKQw'
         document.getElementById('act-noti-text').innerText = "act 10. Bonnie's memorabilia"
         setTimeout(()=> {
             document.getElementById('act-info').innerText = "act 10. Bonnie's memorabilia"
@@ -288,6 +298,7 @@ document.getElementById('next-act').addEventListener('click', () => {
     }
 
     else if (actControls == 11) {
+        document.getElementById('iframe').src = 'https://www.youtube.com/embed/GU4eYLYNrWE'
         document.getElementById('act-noti-text').innerText = 'act 11. ...is auntie May.'
         setTimeout(()=> {
             document.getElementById('act-info').innerText = 'act 11. ...is auntie May.'
@@ -302,6 +313,7 @@ document.getElementById('next-act').addEventListener('click', () => {
     }
 
     else if (actControls == 12) {
+        document.getElementById('iframe').src = ''
         document.getElementById('act-noti-text').innerText = 'act 12. finding proof'
         setTimeout(()=> {
             document.getElementById('act-info').innerText = 'act 12. finding proof'
@@ -316,6 +328,7 @@ document.getElementById('next-act').addEventListener('click', () => {
     }
 
     else if (actControls == 13) {
+        document.getElementById('iframe').src = 'https://www.youtube.com/embed/x5ynHFtpiM4'
         document.getElementById('act-noti-text').innerText = 'act 13. Execution Day'
         setTimeout(()=> {
             document.getElementById('act-info').innerText = 'act 13. Execution Day'
@@ -330,6 +343,7 @@ document.getElementById('next-act').addEventListener('click', () => {
     }
 
     else if (actControls == 14) {
+        document.getElementById('iframe').src = 'https://www.youtube.com/embed/nwym2hIDIZA'
         document.getElementById('act-noti-text').innerText = 'act 14. triumph celebration'
         setTimeout(()=> {
             document.getElementById('act-info').innerText = 'act 14. triumph celebration'
@@ -344,6 +358,7 @@ document.getElementById('next-act').addEventListener('click', () => {
     }
 
     else if (actControls == 15) {
+        document.getElementById('iframe').src = ''
         document.getElementById('act-noti-text').innerText = 'act 15. the end'
         setTimeout(()=> {
             document.getElementById('act-info').innerText = 'act 15. the end... is yet to come'
@@ -358,6 +373,7 @@ document.getElementById('next-act').addEventListener('click', () => {
     }
 
     else if (actControls == 16) {
+        document.getElementById('iframe').src = 'https://www.youtube.com/embed/G0sgWxqO6rY'
         document.getElementById('act-noti-text').innerText = 'act 16. the cursed Wolf'
         setTimeout(()=> {
             document.getElementById('act-info').innerText = 'act 16. the cursed Wolf'
@@ -372,6 +388,7 @@ document.getElementById('next-act').addEventListener('click', () => {
     }
 
     else if (actControls == 17) {
+        document.getElementById('iframe').src = 'https://www.youtube.com/embed/PogKs_PL2hQ'
         TweenMax.to('#next-act', 0, { delay: .2, display: 'none' });
         TweenMax.to('#next-act', 0, { delay: .2, opacity: 0 });
         document.getElementById('act-noti-text').innerText = 'act 17. at last'
@@ -394,6 +411,7 @@ document.getElementById('next-act').addEventListener('click', () => {
 
 
 document.getElementById('prev-act').addEventListener('click', () => {
+    document.getElementById('iframe').src = ''
     TweenMax.to('#circle', 0, { zIndex: '100000'});
     TweenMax.to('#circle', 0, { delay: 2.7, zIndex: '50'});
     TweenMax.to(`#act-${actControls}-container`, 0, { delay: .3, display: 'none'});
@@ -405,6 +423,7 @@ document.getElementById('prev-act').addEventListener('click', () => {
     document.getElementById(`music-tag-${actControls}`).currentTime = 0;
 
     if (actControls == 1) {
+        document.getElementById('iframe').src = 'https://www.youtube.com/embed/79y0_TDVBgM'
         TweenMax.to('#prev-act', 0, { delay: .2, display: 'none' });
         TweenMax.to('#prev-act', 0, { delay: .2, opacity: 0 });
         document.getElementById('act-noti-text').innerText = "act 01. Protector's death"
@@ -421,6 +440,7 @@ document.getElementById('prev-act').addEventListener('click', () => {
     }
 
     if (actControls == 2) {
+        document.getElementById('iframe').src = 'https://www.youtube.com/embed/dTiWs67gcAs'
         document.getElementById('act-noti-text').innerText = 'act 02. Alice in the Wonderland'
         setTimeout(()=> {
             document.getElementById('act-info').innerText = 'act 02. Alice in the Wonderland'
@@ -435,6 +455,7 @@ document.getElementById('prev-act').addEventListener('click', () => {
     }
 
     else if (actControls == 3) {
+        document.getElementById('iframe').src = ''
         document.getElementById('act-noti-text').innerText = 'act 03. quarrels and rumors'
         setTimeout(()=> {
             document.getElementById('act-info').innerText = 'act 03. quarrels and rumors'
@@ -449,6 +470,7 @@ document.getElementById('prev-act').addEventListener('click', () => {
     }
 
     else if (actControls == 4) {
+        document.getElementById('iframe').src = 'https://www.youtube.com/embed/sFX8VJe-9A4'
         document.getElementById('act-noti-text').innerText = 'act 04. one for Roxie, one for Harry'
         setTimeout(()=> {
             document.getElementById('act-info').innerText = 'act 04. one for Roxie, one for Harry'
@@ -463,6 +485,7 @@ document.getElementById('prev-act').addEventListener('click', () => {
     }
 
     else if (actControls == 5) {
+        document.getElementById('iframe').src = 'https://www.youtube.com/embed/XRHMPw8JQ2s'
         document.getElementById('act-noti-text').innerText = 'act 05. love is both life and death'
         setTimeout(()=> {
             document.getElementById('act-info').innerText = 'act 05. love is both life and death'
@@ -477,6 +500,7 @@ document.getElementById('prev-act').addEventListener('click', () => {
     }
 
     else if (actControls == 6) {
+        document.getElementById('iframe').src = 'https://www.youtube.com/embed/YXFHzRdpp9M'
         document.getElementById('act-noti-text').innerText = 'act 06. Roxie is the Witch!'
         setTimeout(()=> {
             document.getElementById('act-info').innerText = 'act 06. Roxie is the Witch!'
@@ -491,6 +515,7 @@ document.getElementById('prev-act').addEventListener('click', () => {
     }
 
     else if (actControls == 7) {
+        document.getElementById('iframe').src = 'https://www.youtube.com/embed/nH84QqF-L7s'
         document.getElementById('act-noti-text').innerText = 'act 07. give him the Candy!'
         setTimeout(()=> {
             document.getElementById('act-info').innerText = 'act 07. give him the Candy!'
@@ -505,6 +530,7 @@ document.getElementById('prev-act').addEventListener('click', () => {
     }
 
     else if (actControls == 8) {
+        document.getElementById('iframe').src = ''
         document.getElementById('act-noti-text').innerText = 'act 08. Layla is dead.'
         setTimeout(()=> {
             document.getElementById('act-info').innerText = 'act 08. Layla is dead.'
@@ -519,6 +545,7 @@ document.getElementById('prev-act').addEventListener('click', () => {
     }
 
     else if (actControls == 9) {
+        document.getElementById('iframe').src = ''
         document.getElementById('act-noti-text').innerText = 'act 09. the second Wolf...'
         setTimeout(()=> {
             document.getElementById('act-info').innerText = 'act 09. the second Wolf...'
@@ -533,6 +560,7 @@ document.getElementById('prev-act').addEventListener('click', () => {
     }
 
     else if (actControls == 10) {
+        document.getElementById('iframe').src = 'https://www.youtube.com/embed/wqB_DWYpKQw'
         document.getElementById('act-noti-text').innerText = "act 10. Bonnie's memorabilia"
         setTimeout(()=> {
             document.getElementById('act-info').innerText = "act 10. Bonnie's memorabilia"
@@ -547,6 +575,7 @@ document.getElementById('prev-act').addEventListener('click', () => {
     }
 
     else if (actControls == 11) {
+        document.getElementById('iframe').src = 'https://www.youtube.com/embed/GU4eYLYNrWE'
         document.getElementById('act-noti-text').innerText = 'act 11. ...is auntie May.'
         setTimeout(()=> {
             document.getElementById('act-info').innerText = 'act 11. ...is auntie May.'
@@ -561,6 +590,7 @@ document.getElementById('prev-act').addEventListener('click', () => {
     }
 
     else if (actControls == 12) {
+        document.getElementById('iframe').src = ''
         document.getElementById('act-noti-text').innerText = 'act 12. finding proof'
         setTimeout(()=> {
             document.getElementById('act-info').innerText = 'act 12. finding proof'
@@ -575,6 +605,7 @@ document.getElementById('prev-act').addEventListener('click', () => {
     }
 
     else if (actControls == 13) {
+        document.getElementById('iframe').src = 'https://www.youtube.com/embed/x5ynHFtpiM4'
         document.getElementById('act-noti-text').innerText = 'act 13. Execution Day'
         setTimeout(()=> {
             document.getElementById('act-info').innerText = 'act 13. Execution Day'
@@ -589,6 +620,7 @@ document.getElementById('prev-act').addEventListener('click', () => {
     }
 
     else if (actControls == 14) {
+        document.getElementById('iframe').src = 'https://www.youtube.com/embed/nwym2hIDIZA'
         document.getElementById('act-noti-text').innerText = 'act 14. triumph celebration'
         setTimeout(()=> {
             document.getElementById('act-info').innerText = 'act 14. triumph celebration'
@@ -603,6 +635,7 @@ document.getElementById('prev-act').addEventListener('click', () => {
     }
 
     else if (actControls == 15) {
+        document.getElementById('iframe').src = ''
         document.getElementById('act-noti-text').innerText = 'act 15. the end'
         setTimeout(()=> {
             document.getElementById('act-info').innerText = 'act 15. the end... is yet to come'
@@ -617,6 +650,7 @@ document.getElementById('prev-act').addEventListener('click', () => {
     }
 
     else if (actControls == 16) {
+        document.getElementById('iframe').src = 'https://www.youtube.com/embed/G0sgWxqO6rY'
         TweenMax.to('#next-act', 0, { delay: .2, display: 'block' });
         TweenMax.to('#next-act', 0, { delay: .2, opacity: 1 });
         document.getElementById('act-noti-text').innerText = 'act 16. the cursed Wolf'
@@ -1325,3 +1359,130 @@ for (i=0; i<17; i++) {
     })
 }
 
+
+
+
+document.getElementById('close-vid').addEventListener('click', () => {
+    setTimeout(() => {
+        document.getElementById('iframe').src = ''
+    }, 550);
+    TweenMax.to('#close-vid', .3, { opacity: 0 });
+    TweenMax.to('#close-vid', 0, { delay: .5, opacity: 1 });
+    TweenMax.to('.video-container', .5, { ease: Back.easeIn.config(1.7), y: '-111vh' });
+    TweenMax.to('.video-container', 0, { delay: .5, display: 'none' })
+})
+
+document.getElementsByClassName('video-container')[0].addEventListener('click', () => {
+    TweenMax.to('#close-vid', .1, { scale: 1.5, ease: Power4.easeIn });
+    TweenMax.to('#close-vid', .1, { delay: .2, scale: 1, ease: Power4.easeIn });
+})
+
+document.getElementsByClassName('youtube')[0].addEventListener('click', () => {
+    for (i = 1; i < 18; i++) {
+        document.getElementById(`music-tag-${i}`).pause();
+    }
+    TweenMax.to('#pause', .3, { opacity: 0});
+    TweenMax.to('#pause', 0, { delay: .3, display: 'none'});
+    TweenMax.to('#play', 0, { delay: .3, display: 'block'});
+    TweenMax.to('#play', .3, { delay: .3, opacity: 1});
+    TweenMax.to('.video-container', 0, { display: 'flex' });
+    TweenMax.to('.video-container', .7, { ease: Power4.easeOut, y: 0 })
+})
+
+document.getElementsByClassName('youtube')[0].addEventListener('click', () => {
+    if (actControls == 1) {
+        document.getElementById('iframe').src = 'https://www.youtube.com/embed/79y0_TDVBgM'
+    }
+
+    else if (actControls == 2) {
+        document.getElementById('iframe').src = 'https://www.youtube.com/embed/dTiWs67gcAs'
+    }
+
+    else if (actControls == 3) {
+        document.getElementById('iframe').src = ''
+    }
+
+    else if (actControls == 4) {
+        document.getElementById('iframe').src = 'https://www.youtube.com/embed/sFX8VJe-9A4'
+    }
+
+    else if (actControls == 5) {
+        document.getElementById('iframe').src = 'https://www.youtube.com/embed/XRHMPw8JQ2s'
+    }
+
+    else if (actControls == 6) {
+        document.getElementById('iframe').src = 'https://www.youtube.com/embed/YXFHzRdpp9M'
+    }
+
+    else if (actControls == 7) {
+        document.getElementById('iframe').src = 'https://www.youtube.com/embed/nH84QqF-L7s'
+    }
+
+    else if (actControls == 8) {
+        document.getElementById('iframe').src = ''
+    }
+
+    else if (actControls == 9) {
+        document.getElementById('iframe').src = ''
+    }
+
+    else if (actControls == 10) {
+        document.getElementById('iframe').src = 'https://www.youtube.com/embed/wqB_DWYpKQw'
+    }
+
+    else if (actControls == 11) {
+        document.getElementById('iframe').src = 'https://www.youtube.com/embed/GU4eYLYNrWE'
+    }
+
+    else if (actControls == 12) {
+        document.getElementById('iframe').src = ''
+    }
+
+    else if (actControls == 13) {
+        document.getElementById('iframe').src = 'https://www.youtube.com/embed/x5ynHFtpiM4'
+    }
+
+    else if (actControls == 14) {
+        document.getElementById('iframe').src = 'https://www.youtube.com/embed/nwym2hIDIZA'
+    }
+
+    else if (actControls == 15) {
+        document.getElementById('iframe').src = ''
+    }
+
+    else if (actControls == 16) {
+        document.getElementById('iframe').src = 'https://www.youtube.com/embed/G0sgWxqO6rY'
+    }
+
+    else if (actControls == 17) {
+        document.getElementById('iframe').src = 'https://www.youtube.com/embed/PogKs_PL2hQ'
+    }
+})
+
+for (i = 0; i < 5; i ++) {
+    document.getElementsByClassName('rotate-on-hover')[i].addEventListener('mouseover', () => {
+        TweenMax.to('#circle', .3, { backgroundColor: 'white' });
+    })
+    
+    document.getElementsByClassName('rotate-on-hover')[i].addEventListener('mouseout', () => {
+        TweenMax.to('#circle', .3, { backgroundColor: 'transparent' });
+    })
+}
+
+for (i = 0; i <17; i++) {
+    document.getElementsByClassName('img-next')[i].addEventListener('mouseover', () => {
+        TweenMax.to('#circle', .3, { backgroundColor: 'white' });
+    })
+    
+    document.getElementsByClassName('img-next')[i].addEventListener('mouseout', () => {
+        TweenMax.to('#circle', .3, { backgroundColor: 'transparent' });
+    })
+
+    document.getElementsByClassName('img-prev')[i].addEventListener('mouseover', () => {
+        TweenMax.to('#circle', .3, { backgroundColor: 'white' });
+    })
+    
+    document.getElementsByClassName('img-prev')[i].addEventListener('mouseout', () => {
+        TweenMax.to('#circle', .3, { backgroundColor: 'transparent' });
+    })
+}
