@@ -2,8 +2,11 @@ window.onload = () => {
     setTimeout(() => {
         TweenMax.to('#gif', 0.4, { opacity: 0 });
         TweenMax.to('#p-loading', 0.4, { opacity: 0 });
+        TweenMax.to('#p-loading-note', 0.4, { opacity: 0 });
         TweenMax.to('#gif', 0, { delay: .4, display: 'none' });
         TweenMax.to('#p-loading', 0, { delay: .4, display: 'none' });
+        TweenMax.to('#p-loading-note', 0, { delay: .4, display: 'none' });
+
 
 
         // TweenMax.to('.music-rights', 0, { delay: 2.25, display: 'block' });

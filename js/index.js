@@ -3,8 +3,10 @@ window.onload = () => {
     setTimeout(() => {
         TweenMax.to('#gif', 0.4, { opacity: 0 });
         TweenMax.to('#p-loading', 0.4, { opacity: 0 });
+        TweenMax.to('#p-loading-note', 0.4, { opacity: 0 });
         TweenMax.to('#gif', 0, { delay: .4, display: 'none' });
         TweenMax.to('#p-loading', 0, { delay: .4, display: 'none' });
+        TweenMax.to('#p-loading-note', 0, { delay: .4, display: 'none' });
 
 
         TweenMax.to('.music-rights', 0, { delay: 2.25, display: 'block' });
@@ -14,12 +16,6 @@ window.onload = () => {
 
         document.getElementById('allow-music').addEventListener('click', () => {
             TweenMax.to('.preloader', 1.1, { y: '-101vh', ease: Power4.easeInOut });
-
-            TweenMax.to('#gif', 0, { delay: 1.1, opacity: 1 });
-            TweenMax.to('#p-loading', 0, { delay: 1.1, opacity: 1 });
-            TweenMax.to('#gif', 0, { delay: 1.1, display: 'block' });
-            TweenMax.to('#p-loading', 0, { delay: 1.1, display: 'block' });
-
 
             TweenMax.to('.music-rights', 0, { delay: 1.1, display: 'none' });
             TweenMax.to('#p-media-control', 0, { delay: 1.1, display: 'none' });
@@ -37,12 +33,6 @@ window.onload = () => {
 
         document.getElementById('deny-music').addEventListener('click', () => {
             TweenMax.to('.preloader', 1.1, { y: '-101vh', ease: Power4.easeInOut });
-
-            TweenMax.to('#gif', 0, { delay: 1.1, opacity: 1 });
-            TweenMax.to('#p-loading', 0, { delay: 1.1, opacity: 1 });
-            TweenMax.to('#gif', 0, { delay: 1.1, display: 'block' });
-            TweenMax.to('#p-loading', 0, { delay: 1.1, display: 'block' });
-
 
             TweenMax.to('.music-rights', 0, { delay: 1.1, display: 'none' });
             TweenMax.to('#p-media-control', 0, { delay: 1.1, display: 'none' });
