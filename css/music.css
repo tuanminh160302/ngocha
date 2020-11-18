@@ -255,7 +255,7 @@ html, body{
 }
 
 .content-container {
-    height: 420vh;
+    height: 530vh;
     width: 100%;
     margin: 0;
     padding: 0;
@@ -272,6 +272,10 @@ html, body{
     position: relative;
 }
 
+#song-list-glee-at-home {
+    height: 130vh !important;
+}
+
 .song-list:nth-child(1)::before {
     display: none;
 }
@@ -281,6 +285,12 @@ html, body{
     display: block;
     border-bottom: 2px solid white;
     transform: scaleX(0.35);
+}
+
+#last-hr {
+    width: 35vw;
+    height: 1px;
+    background-color: white;
 }
 
 .h1-list {
@@ -467,5 +477,233 @@ html, body{
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.event-description {
+    color: white;
+    top: 35vh;
+    position: absolute;
+    left: 30vw;
+    cursor: default;
+    margin: 0;
+    font-size: 1em;
+    width: 25vw;
+    height: auto;
+    line-height: 40px;
+}
+
+#glee-at-home-description {
+    top: 70vh !important;
+}
+
+#conclude {
+    position: relative;
+    color: white;
+    width: 50vw;
+    left: 25vw;
+    height: auto;
+    top: 10vh;
+    line-height: 50px;
+    font-style: italic;
+}
+
+#play-5 {
+    height: 3vh;
+    width: 3vh;
+    top: 25vh;
+    left: 50vw;
+    position: absolute;
+    transition: .3s;
+    cursor: pointer;
+}
+
+#play-5:hover {
+    filter: invert(100%);
+    transition: .3s;
+}
+
+#pause-5 {
+    display: none;
+    opacity: 0;
+    top: 25vh;
+}
+
+#play-5-2 {
+    height: 3vh;
+    width: 3vh;
+    top: 33vh;
+    left: 50vw;
+    position: absolute;
+    transition: .3s;
+    cursor: pointer;
+}
+
+#play-5-2:hover {
+    filter: invert(100%);
+    transition: .3s;
+}
+
+#pause-5-2 {
+    display: none;
+    opacity: 0;
+    top: 33vh;
+}
+
+#play-5-3 {
+    height: 3vh;
+    width: 3vh;
+    top: 41vh;
+    left: 50vw;
+    position: absolute;
+    transition: .3s;
+    cursor: pointer;
+}
+
+#play-5-3:hover {
+    filter: invert(100%);
+    transition: .3s;
+}
+
+#pause-5-3 {
+    display: none;
+    opacity: 0;
+    top: 41vh;
+}
+
+#play-5-4 {
+    height: 3vh;
+    width: 3vh;
+    top: 49vh;
+    left: 50vw;
+    position: absolute;
+    transition: .3s;
+    cursor: pointer;
+}
+
+#play-5-4:hover {
+    filter: invert(100%);
+    transition: .3s;
+}
+
+#pause-5-4 {
+    display: none;
+    opacity: 0;
+    top: 49vh;
+}
+
+#play-5-5 {
+    height: 3vh;
+    width: 3vh;
+    top: 57vh;
+    left: 50vw;
+    position: absolute;
+    transition: .3s;
+    cursor: pointer;
+}
+
+#play-5-5:hover {
+    filter: invert(100%);
+    transition: .3s;
+}
+
+#pause-5-5 {
+    display: none;
+    opacity: 0;
+    top: 57vh;
+}
+
+.gah {
+    color: white;
+    left: 30vw;
+    position: absolute;
+    margin: 0;
+    height: 3vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#gah1 {
+    top: 25vh;
+}
+
+#gah2 {
+    top: 33vh;
+}
+
+#gah3 {
+    top: 41vh;
+}
+
+#gah4 {
+    top: 49vh;
+}
+
+#gah5 {
+    top: 57vh;
+}
+
+#glee-preloader {
+    opacity: 0;
+    display: none;
+    color: white;
+    font-size: 1.5em;
+    position: absolute;
+    top: 10vh;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#glee-details-preloader {
+    opacity: 0;
+    display: none;
+    color: white;
+    width: 50vw;
+    top: 30vh;
+    left: 50%;
+    transform: translateX(-50%);
+    line-height: 40px;
+    height: auto;
+    position: absolute;
+}
+
+.glee-details-a {
+    color: #BC4038;
+    border-bottom: 1px solid #bc4038;
+    cursor: pointer;
+}
+
+#vocalist {
+    position: absolute;
+    opacity: 0;
+    display: none;
+    bottom: 10vh;
+    right: 10vw;
+    height: 35vh;
+    width: auto;
+    z-index: -1;
+}
+
+#president {
+    position: absolute;
+    opacity: 0;
+    display: none;
+    bottom: 10vh;
+    right: 10vw;
+    height: 35vh;
+    width: auto;
+    z-index: -1;
+}
+
+#understand-music {
+    height: 4vh;
+    width: 4vh;
+    position: absolute;
+    bottom: 10vh;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    display: none;
     cursor: pointer;
 }
