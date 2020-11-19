@@ -97,7 +97,7 @@ window.onload = () => {
 
             TweenMax.to('#glams-preloader', .0, { delay: .5, display: 'block' });
             TweenMax.to('#fb-glams', .0, { delay: 4, display: 'block' });
-            TweenMax.to('#srolldown', .0, { delay: 4, display: 'block' });
+            TweenMax.to('#scrolldown', .0, { delay: 4, display: 'block' });
             TweenMax.to('#glams-preloader', 2, { delay: 1, opacity: 1 });
             TweenMax.to('#fb-glams', .5, { delay: 4.5, opacity: 1 });
             TweenMax.to('#scrolldown', .5, { delay: 4.5, opacity: 1 });
@@ -1371,6 +1371,32 @@ for (i=0; i<17; i++) {
 }
 
 
+document.getElementById('close-vid-ac').addEventListener('click', () => {
+    setTimeout(() => {
+        document.getElementById('iframe-ac').src = ''
+    }, 550);
+    TweenMax.to('#close-vid-ac', .3, { opacity: 0 });
+    TweenMax.to('#close-vid-ac', 0, { delay: .5, opacity: 1 });
+    TweenMax.to('.after-credit-video', .5, { ease: Back.easeIn.config(1.7), y: '-111vh' });
+    TweenMax.to('.after-credit-video', 0, { delay: .5, display: 'none' })
+})
+
+document.getElementById('after-credit').addEventListener('click', () => {
+    document.getElementById('iframe-ac').src = 'https://www.youtube.com/embed/txc5sMJwBJM'
+    for (i = 1; i < 18; i++) {
+        document.getElementById(`music-tag-${i}`).pause();
+    }
+    TweenMax.to('#pause', .3, { opacity: 0});
+    TweenMax.to('#pause', 0, { delay: .3, display: 'none'});
+    TweenMax.to('#play', 0, { delay: .3, display: 'block'});
+    TweenMax.to('#play', .3, { delay: .3, opacity: 1});
+    TweenMax.to('.after-credit-video', 0, { display: 'flex' });
+    TweenMax.to('.after-credit-video', .7, { ease: Power4.easeOut, y: 0 });
+    TweenMax.to('#close-vid', .1, { scale: 1.5, ease: Power4.easeIn });
+    TweenMax.to('#close-vid', .1, { delay: .2, scale: 1, ease: Power4.easeIn });
+})
+
+
 
 
 document.getElementById('close-vid').addEventListener('click', () => {
@@ -1383,11 +1409,6 @@ document.getElementById('close-vid').addEventListener('click', () => {
     TweenMax.to('.video-container', 0, { delay: .5, display: 'none' })
 })
 
-document.getElementsByClassName('video-container')[0].addEventListener('click', () => {
-    TweenMax.to('#close-vid', .1, { scale: 1.5, ease: Power4.easeIn });
-    TweenMax.to('#close-vid', .1, { delay: .2, scale: 1, ease: Power4.easeIn });
-})
-
 document.getElementsByClassName('youtube')[0].addEventListener('click', () => {
     for (i = 1; i < 18; i++) {
         document.getElementById(`music-tag-${i}`).pause();
@@ -1397,7 +1418,9 @@ document.getElementsByClassName('youtube')[0].addEventListener('click', () => {
     TweenMax.to('#play', 0, { delay: .3, display: 'block'});
     TweenMax.to('#play', .3, { delay: .3, opacity: 1});
     TweenMax.to('.video-container', 0, { display: 'flex' });
-    TweenMax.to('.video-container', .7, { ease: Power4.easeOut, y: 0 })
+    TweenMax.to('.video-container', .7, { ease: Power4.easeOut, y: 0 });
+    TweenMax.to('#close-vid', .1, { scale: 1.5, ease: Power4.easeIn });
+    TweenMax.to('#close-vid', .1, { delay: .2, scale: 1, ease: Power4.easeIn });
 })
 
 document.getElementsByClassName('youtube')[0].addEventListener('click', () => {
