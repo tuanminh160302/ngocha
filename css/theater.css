@@ -307,14 +307,15 @@ html, body {
 
 .after-credit-video {
     z-index: 10000000;
-    background: rgba(0, 0, 0, .9);
+    background: black;
     height: 110vh;
     width: 100vw;
     position: fixed;
     bottom: 0;
     left: 0;
     /* display: flex; */
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-around;
     align-items: center;
     transform: translateY(-100vh);
     display: none;
@@ -323,6 +324,13 @@ html, body {
 .after-credit-video iframe {
     height: 54vh !important;
     width: 96vh !important;
+}
+
+#ac-letter {
+    color: white;
+    font-family: 'raleway';
+    line-height: 40px;
+    margin: 0;
 }
 
 #close-vid {
