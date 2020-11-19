@@ -58,6 +58,7 @@
     display: none;
     opacity: 0;
     animation: scrolldown 1.5s infinite;
+    z-index: 10000;
 }
 
 @keyframes scrolldown {

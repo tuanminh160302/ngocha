@@ -684,6 +684,7 @@ html, body{
     top: 10vh;
     left: 50%;
     transform: translateX(-50%);
+    font-family: 'raleway';
 }
 
 #glee-details-preloader {

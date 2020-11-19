@@ -56,10 +56,10 @@ html, body {
 #after-credit {
     color: white;
     position: absolute;
-    bottom: 4.5vh;
+    top: 4vh;
     z-index: 1000;
     cursor: pointer;
-    right: 20vw;
+    right: 10vw;
     margin: 0;
 }
 
