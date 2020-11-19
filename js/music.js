@@ -12,7 +12,9 @@ window.onload = () => {
     TweenMax.to('#p-loading-note', 0, { delay: .4, display: 'none' });
 
     TweenMax.to('#glee-preloader', 0, { delay: 2, display: 'block'});
+    TweenMax.to('#fb-glee', 0, { delay: 2, display: 'block'});
     TweenMax.to('#glee-preloader', 0.4, { delay: 2, opacity: 1});
+    TweenMax.to('#fb-glee', 0.4, { delay: 2, opacity: 1});
     TweenMax.to('#glee-details-preloader', 0, { delay: 2, display: 'block'});
     TweenMax.to('#glee-details-preloader', 0.4, { delay: 2, opacity: 1});
     TweenMax.to('#understand-music', 0, { delay: 3, display: 'block'});
@@ -24,11 +26,30 @@ document.getElementById('a-vocalist').addEventListener('click', ()=> {
     TweenMax.to('#vocalist', 0.4, { opacity: 1});
     TweenMax.to('#president', 0, { delay: .4, display: 'none'});
     TweenMax.to('#president', 0.4, { opacity: 0});
+    TweenMax.to('#understand-music', 0, { delay: .4, display: 'none'});
+    TweenMax.to('#understand-music', .4, { opacity: 0});
+    TweenMax.to('#close-preloader-img', 0, { delay: .4, display: 'block'});
+    TweenMax.to('#close-preloader-img', .4, { delay: .4, opacity: 1});
 })
 
 document.getElementById('a-president').addEventListener('click', ()=> {
     TweenMax.to('#president', 0, { display: 'block'});
     TweenMax.to('#president', 0.4, { opacity: 1});
+    TweenMax.to('#vocalist', 0, { delay: .4, display: 'none'});
+    TweenMax.to('#vocalist', 0.4, { opacity: 0});
+    TweenMax.to('#understand-music', 0, { delay: .4, display: 'none'});
+    TweenMax.to('#understand-music', .4, { opacity: 0});
+    TweenMax.to('#close-preloader-img', 0, { delay: .4, display: 'block'});
+    TweenMax.to('#close-preloader-img', .4, { delay: .4, opacity: 1});
+})
+
+document.getElementById('close-preloader-img').addEventListener('click', ()=> {
+    TweenMax.to('#close-preloader-img', 0, { delay: .4, display: 'none'});
+    TweenMax.to('#close-preloader-img', .4, { opacity: 0});
+    TweenMax.to('#understand-music', 0, { delay: .4, display: 'block'});
+    TweenMax.to('#understand-music', .4, { delay: .4, opacity: 1});
+    TweenMax.to('#president', 0, { delay: .4, display: 'none'});
+    TweenMax.to('#president', 0.4, { opacity: 0});
     TweenMax.to('#vocalist', 0, { delay: .4, display: 'none'});
     TweenMax.to('#vocalist', 0.4, { opacity: 0});
 })

@@ -53,14 +53,60 @@
     position: absolute;
     color: white;
     font-size: 1.2em;
-    /* opacity: 0;
-    display: none; */
+    opacity: 0;
+    display: none;
     margin: 0;
     left: 50%;
     transform: translateX(-50%);
     top: 20vh;
     cursor: pointer;
     z-index: 10000;
+}
+
+#scrolldown {
+    position: absolute;
+    color: white;
+    font-size: 1.2em;
+    opacity: 0;
+    display: none;
+    margin: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 25vh;
+    cursor: pointer;
+    z-index: 10000;
+}
+
+#fb-glams {
+    height: 3vh;
+    width: 3vh;
+    position: absolute;
+    top: 4vh;
+    left: 3vw;
+    display: none;
+    opacity: 0;
+    transition: .5s;
+}
+
+#fb-glams:hover {
+    transition: .5s;
+    transform: rotate(360deg);
+}
+
+#fb-glee {
+    height: 3vh;
+    width: 3vh;
+    position: absolute;
+    top: 4vh;
+    left: 3vw;
+    display: none;
+    opacity: 0;
+    transition: .5s;
+}
+
+#fb-glee:hover {
+    transition: .5s;
+    transform: rotate(360deg);
 }
 
 #glams-description {

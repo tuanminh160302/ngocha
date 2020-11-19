@@ -44,7 +44,13 @@ window.onload = () => {
             }, 6500)
             
             TweenMax.to('#glams-preloader', .0, { delay: .5, display: 'block' });
+            TweenMax.to('#glams-name', .0, { delay: 4, display: 'block' });
+            TweenMax.to('#scrolldown', .0, { delay: 4, display: 'block' });
+            TweenMax.to('#fb-glams', .0, { delay: 4, display: 'block' });
             TweenMax.to('#glams-preloader', 2, { delay: 1, opacity: 1 });
+            TweenMax.to('#glams-name', .5, { delay: 4.5, opacity: 1 });
+            TweenMax.to('#scrolldown', .5, { delay: 4.5, opacity: 1 });
+            TweenMax.to('#fb-glams', .5, { delay: 4.5, opacity: 1 });
             TweenMax.to('#glams-preloader', .7, { delay: 3.3, y: '-40vh', ease: Power4.easeInOut});
             TweenMax.to('#glams-description', 0, { delay: 4.5, display: 'block'});
             TweenMax.to('#glams-description', .5, { delay: 4.5, opacity: 1});
@@ -92,7 +98,13 @@ window.onload = () => {
             }, 6500)
 
             TweenMax.to('#glams-preloader', .0, { delay: .5, display: 'block' });
+            TweenMax.to('#glams-name', .0, { delay: 4, display: 'block' });
+            TweenMax.to('#scrolldown', .0, { delay: 4, display: 'block' });
+            TweenMax.to('#fb-glams', .0, { delay: 4, display: 'block' });
             TweenMax.to('#glams-preloader', 2, { delay: 1, opacity: 1 });
+            TweenMax.to('#glams-name', .5, { delay: 4.5, opacity: 1 });
+            TweenMax.to('#scrolldown', .5, { delay: 4.5, opacity: 1 });
+            TweenMax.to('#fb-glams', .5, { delay: 4.5, opacity: 1 });
             TweenMax.to('#glams-preloader', .7, { delay: 3.3, y: '-40vh', ease: Power4.easeInOut});
             TweenMax.to('#glams-description', 0, { delay: 4.5, display: 'block'});
             TweenMax.to('#glams-description', .5, { delay: 4.5, opacity: 1});
