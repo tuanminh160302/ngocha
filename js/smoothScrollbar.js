@@ -1,7 +1,7 @@
 var Scrollbar = window.Scrollbar;
 
 var options = {
-    'damping': 0.01,
+    'damping': 0.05,
     // 'alwaysShowTracks': true
 }
 
