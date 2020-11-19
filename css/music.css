@@ -698,6 +698,7 @@ html, body{
     height: auto;
     position: absolute;
     text-align: center;
+    font-family: 'raleway';
 }
 
 .glee-details-a {
